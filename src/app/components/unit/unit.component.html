@@ -1,187 +1,183 @@
-<div class="bg"></div>
+<div *ngIf="unit$ | async as unit">
 
-<div fxLayout="row" fxLayoutAlign="center center" class="logo">
-  <img src="../../../assets/high_elves/spears4.jpg" fxFlex="100">
-</div>
 
-<div fxLayout="row wrap">
-  <div class="stat-block">
-    <div class="unit-name">
-      High Elves Spearmen
-    </div>
-    <table>
-      <tr>
-        <th>Movement</th>
-        <th>Defense</th>
-        <th>Resilience</th>
-        <th>HP</th>
-        <th>Req. Cost</th>
-        <th>Base</th>
-      </tr>
-      <tr>
-        <td>4" / 7"</td>
-        <td>4/4/4</td>
-        <td>1</td>
-        <td>12</td>
-        <td>2 CP</td>
-        <td>50mm</td>
-      </tr>
-    </table>
+  <div class="bg"></div>
+
+  <div fxLayout="row" fxLayoutAlign="center center" class="logo">
+    <img src="{{unit.imageUrl}}" fxFlex="100">
   </div>
 
-  <div class="stat-block">
-    <div class="unit-abilities">
-      Attacks
+  <div fxLayout="row wrap">
+    <div class="stat-block">
+      <div class="unit-name">
+        {{ unit.name }}
+      </div>
+      <table>
+        <tr>
+          <th>Movement</th>
+          <th>Defense</th>
+          <th>Resilience</th>
+          <th>HP</th>
+          <th>Req. Cost</th>
+          <th>Base</th>
+        </tr>
+        <tr>
+          <td>{{ unit.baseStats.movement }}</td>
+          <td>{{ unit.baseStats.defense }}</td>
+          <td>{{ unit.baseStats.resilience }}</td>
+          <td>{{ unit.baseStats.hp }}</td>
+          <td>{{ unit.baseStats.cost }}</td>
+          <td>{{ unit.baseStats.base }}</td>
+        </tr>
+      </table>
     </div>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th>Range</th>
-        <th>Dice</th>
-        <th>Attacks</th>
-        <th>Rend</th>
-        <th>Flank Bonus</th>
-      </tr>
-      <tr>
-        <td>Spear</td>
-        <td>Melee</td>
-        <td>4/3</td>
-        <td>2</td>
-        <td>1</td>
-        <td>
-          <div>
-            +0 / +1
+
+    <div class="stat-block">
+      <div class="unit-abilities">
+        Unit abilities
+      </div>
+      <table>
+        <tr>
+          <th class="ability-name-header">Name</th>
+          <th>Cost</th>
+          <th>Range</th>
+          <th>Once per turn</th>
+        </tr>
+        <tbody *ngFor="let ability of unit.abilities">
+          <tr class="ability">
+            <td class="ability-name">{{ ability.name }}</td>
+            <td>
+              <div class="ability-cost">
+                <span class="ability-cost-item">{{ ability.cost }}</span>
+                <span class="ability-cost-item" *ngIf="ability.costCanBePaidWithSymbol" style="margin-left: 5px">
+                  /</span>
+                <img class="effect-logo2" src="../../../assets/FE.png">
+              </div>
+            </td>
+            <td>{{ ability.range }}</td>
+            <td>{{ ability.oncePerTurn | yesno }}</td>
+          </tr>
+          <tr>
+            <td colspan="100" class="ability-text">
+              {{ ability.description }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="stat-block">
+      <div class="unit-abilities">
+        Attacks
+      </div>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Range</th>
+          <th>Dice</th>
+          <th>Attacks</th>
+          <th>Rend</th>
+          <th>Flank Bonus</th>
+        </tr>
+        <tr *ngFor="let attack of unit.attacks">
+          <td>{{ attack.name }}</td>
+          <td>{{ attack.range }}</td>
+          <td>{{ attack.dice }}</td>
+          <td>{{ attack.attacks }}</td>
+          <td>{{ attack.rend }}</td>
+          <td>
+            <div *ngFor="let bonus of attack.flankBonus">
+              {{ bonus }}
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div class="tracks">
+        <div *ngFor="let attack of unit.attacks">
+
+          <div class="unit-abilities">
+            {{ attack.name }}
           </div>
-          <div>
-            -1 melee defense
-          </div>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div class="stat-block">
-    <div class="unit-abilities">
-      Unit abilities
+          <table>
+            <tr>
+              <th *ngIf="hasOneHit(attack)">1 hit</th>
+              <th *ngIf="hasTwoHits(attack)">2 hits</th>
+              <th *ngIf="hasThreeHits(attack)">3 hits</th>
+              <th *ngIf="hasFourHits(attack)">4 hits</th>
+              <th *ngIf="hasFiveHits(attack)">5 hits</th>
+              <th *ngIf="hasSixHits(attack)">6 hits</th>
+              <th *ngIf="hasSevenHits(attack)">7 hits</th>
+              <th *ngIf="hasEightHits(attack)">8 hits</th>
+            </tr>
+            <tr *ngFor="let track of attack.damageTracks" class="damage-profile">
+              <td *ngIf="hasOneHit(attack)">{{ track.hits1 }}</td>
+              <td *ngIf="hasTwoHits(attack)">{{ track.hits2 }}</td>
+              <td *ngIf="hasThreeHits(attack)">{{ track.hits3 }}</td>
+              <td *ngIf="hasFourHits(attack)">{{ track.hits4 }}</td>
+              <td *ngIf="hasFiveHits(attack)">{{ track.hits5 }}</td>
+              <td *ngIf="hasSixHits(attack)">{{ track.hits6 }}</td>
+              <td *ngIf="hasSevenHits(attack)">{{ track.hits7 }}</td>
+              <td *ngIf="hasEightHits(attack)">{{ track.hits8 }}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </div>
-    <table>
-      <tr>
-        <th class="ability-name-header">Name</th>
-        <th>Cost</th>
-        <th>Range</th>
-        <th>Once per turn</th>
-      </tr>
-      <tr class="ability">
-        <td class="ability-name">Glimmering Shields</td>
-        <td>
-          <span>1 CMD / </span>
-          <span><img class="effect-logo2" src="../../../assets/FE.png"></span>
-        </td>
-        <td>Melee</td>
-        <td>Yes</td>
-      </tr>
-      <tr>
-        <td colspan="100" class="ability-text">
-          During target unit's next combat round, it rolls one fewer dice with each attack, down to a min. of one.
-        </td>
-      </tr>
-    </table>
-  </div>
 
-  <div class="stat-block">
-    <div class="unit-abilities">
-      Spear
+
+
+    <div class="stat-block">
+      <div class="unit-abilities">
+        Leveling abilities
+      </div>
+      <table>
+        <tr>
+          <th class="ability-name-header">Name</th>
+          <th>Cost</th>
+          <th>Range</th>
+          <th>Once per turn</th>
+        </tr>
+
+        <tbody *ngFor="let levelingAbility of unit.levelingAbilities">
+          <tr class="ability">
+            <td class="ability-name">{{ levelingAbility.name }}</td>
+            <td fxLayoutAlign="center center">{{ levelingAbility.cost }}</td>
+            <td>{{ levelingAbility.range }}</td>
+            <td>{{ levelingAbility.oncePerTurn | yesno }}</td>
+          </tr>
+          <tr>
+            <td colspan="100" class="ability-text">
+              {{ levelingAbility.description }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <table>
-      <tr>
-        <th>1 hit</th>
-        <th>2 hits</th>
-        <th>3 hits</th>
-        <th>4 hits</th>
-        <th>5 hits</th>
-      </tr>
-      <tr class="damage-profile">
-        <td>2 dmg</td>
-        <td>3 dmg</td>
-        <td>4 dmg</td>
-        <td>5 dmg</td>
-        <td>6 dmg</td>
-      </tr>
-      <tr class="damage-profile">
-        <td></td>
-        <td>2" Push</td>
-        <td><img class="effect-logo" src="../../../assets/FE.png"></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
-  </div>
 
-  <div class="stat-block">
-    <div class="unit-abilities">
-      Leveling abilities
+    <div class="stat-block" *ngIf="unit.objectives.length > 0">
+      <div class="unit-abilities">
+        Battlefield Objectives
+      </div>
+      <table>
+        <tr>
+          <th class="ability-name-header">Name</th>
+          <th>Reward</th>
+        </tr>
+        <tbody *ngFor="let objective of unit.objectives">
+          <tr class="ability">
+            <td class="ability-name">{{ objective.name }}</td>
+            <td>
+              <span>{{ objective.reward }}</span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="100" class="ability-text">
+              {{ objective.description }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <table>
-      <tr>
-        <th class="ability-name-header">Name</th>
-        <th>Cost</th>
-        <th>Range</th>
-        <th>Once per turn</th>
-      </tr>
-
-      <tr class="ability">
-        <td class="ability-name">Shield Wall</td>
-        <td fxLayoutAlign="center center">1 CMD</td>
-        <td>Self</td>
-        <td>Yes</td>
-      </tr>
-      <tr>
-        <td colspan="100" class="ability-text">
-          A unit can use this ability as part of an advance order. The unit will receive a +1/+2/+0 bonus to it’s
-          defence,
-          but suffer a -2” movement penalty as long as the ability is in effect. The effect can be ended anytime just
-          before receiving an order. The unit can only select defensive combat orders.
-        </td>
-      </tr>
-
-      <tr class="ability">
-        <td class="ability-name">Wall of Spears</td>
-        <td fxLayoutAlign="center center">1 CMD</td>
-        <td>Self</td>
-        <td>Yes</td>
-      </tr>
-      <tr>
-        <td colspan="100" class="ability-text">
-          The unit can use this command as a reaction to being charged by a cavalry unit while not engaged by any
-          other
-          unit.
-          This unit gets to make an attack immediately, as part of the enemy units activation.
-          In the following combat round, the enemy unit loses any charge bonus for attacks targeting this unit.
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div class="stat-block">
-    <div class="unit-abilities">
-      Battlefield Objectives
-    </div>
-    <table>
-      <tr>
-        <th class="ability-name-header">Name</th>
-        <th>Reward</th>
-      </tr>
-      <tr class="ability">
-        <td class="ability-name">Securing the Homeland</td>
-        <td>
-          <span>1 VP</span>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="100" class="ability-text">
-          When scoring VP for controlling an objective, this unit scores 1 extra VP.
-        </td>
-      </tr>
-    </table>
   </div>
 </div>

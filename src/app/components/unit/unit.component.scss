@@ -26,7 +26,8 @@
   background-color: #dfdfdfbb;
   width: fit-content;
   border-radius: 3px;
-  min-width: 32rem;
+  min-width: 36rem;
+  max-width: 36rem;
   height: fit-content;
 }
 
@@ -67,8 +68,8 @@ th:not(:last-of-type) {
 }
 
 .effect-logo2 {
-  margin-top: -4px;
-  position: absolute;
+  margin-left: 5px;
+  position: inherit;
   width: 25px;
 }
 
@@ -87,9 +88,18 @@ th:not(:last-of-type) {
 }
 
 .ability > td {
-  padding-top: .5rem;
+  padding-top: .1rem;
+  line-height: 25px;
 }
 
 td {
   max-width: 30rem;
+}
+
+.ability-cost-item {
+  vertical-align: text-bottom;
+}
+
+.tracks {
+  margin-top: 1rem;
 }
