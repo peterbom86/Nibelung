@@ -3,7 +3,7 @@ import { Attack, BaseStats, BattlefieldObjective, LevelingAbility, Unit, UnitAbi
 export class Spearmen implements Unit {
   constructor() {
     this.id = "1";
-    this.name = "Noble Elves Spearmen";
+    this.name = "Noble Elf House Guard Spearmen";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
 
     this.baseStats = {

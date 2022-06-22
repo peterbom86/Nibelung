@@ -1,20 +1,4 @@
-.logo {
-  position: fixed;
-  opacity: .3;
-  height: calc(100vh - 64px);
-}
-
-.bg {
-  padding-top: 1rem;
-  padding-left: 1rem;
-  background-color: #3c3c3c;
-  height: 100vh;
-  z-index: -2;
-  position: fixed;
-  width: 100%;
-}
-
-.stat-block {
+.block {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -30,7 +14,7 @@
   height: fit-content;
 }
 
-.unit-name {
+.title {
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: .5rem;
@@ -38,10 +22,6 @@
 
 td:not(.ability-text):not(.ability-name) {
   text-align: center;
-}
-
-.ability-name {
-  font-weight: bold;
 }
 
 tr:not(:last-of-type):not(.ability) {
@@ -61,31 +41,6 @@ th:not(:last-of-type) {
   border-right: 1px solid;
 }
 
-.effect-logo {
-  margin-top: 5px;
-  width: 25px;
-}
-
-.effect-logo2 {
-  margin-left: 5px;
-  position: inherit;
-  width: 25px;
-}
-
-.damage-profile {
-  height: 2.5rem;
-}
-
-.unit-abilities {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: .5rem;
-}
-
-.ability-name-header {
-  text-align: left;
-}
-
 .ability > td {
   padding-top: .1rem;
   line-height: 25px;
@@ -93,12 +48,4 @@ th:not(:last-of-type) {
 
 td {
   max-width: 30rem;
-}
-
-.ability-cost-item {
-  vertical-align: text-bottom;
-}
-
-.tracks {
-  margin-top: 1rem;
 }

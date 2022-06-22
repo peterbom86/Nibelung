@@ -1,23 +1,76 @@
 <div class="main-container">
   <mat-toolbar class="toolbar" color="primary" fxLayoutAlign="space-between center">
     <div fxLayout="row" fxLayoutAlign="center center">
-      <button mat-icon-button class="menu-toggle" (click)="snav.toggle()">
+
+      <button mat-icon-button class="menu-toggle" [matMenuTriggerFor]="factions">
         <mat-icon>menu</mat-icon>
       </button>
+      <mat-menu #factions="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="nobleElves">Noble Elves</button>
+        <button mat-menu-item [matMenuTriggerFor]="court">The Sanguine Court</button>
+      </mat-menu>
+
+      <mat-menu #nobleElves="matMenu">
+        <button mat-menu-item routerLink="/faction/1">Faction Rules</button>
+        <button mat-menu-item [matMenuTriggerFor]="neSubfactions">Subfactions</button>
+        <!-- <button mat-menu-item [matMenuTriggerFor]="neCharacters">Characters</button> -->
+        <button mat-menu-item [matMenuTriggerFor]="neUnits">Units</button>
+        <!-- <button mat-menu-item [matMenuTriggerFor]="neLegends">Legends</button> -->
+      </mat-menu>
+
+      <mat-menu #court="matMenu">
+        <button mat-menu-item>Faction Rules</button>
+        <button mat-menu-item [matMenuTriggerFor]="courtSubfactions">Subfactions</button>
+        <button mat-menu-item [matMenuTriggerFor]="courtCharacters">Characters</button>
+        <button mat-menu-item [matMenuTriggerFor]="courtUnits">Units</button>
+        <button mat-menu-item [matMenuTriggerFor]="courtLegends">Legends</button>
+      </mat-menu>
+
+      <mat-menu #neSubfactions="matMenu">
+        <button mat-menu-item routerLink="/subfaction/1">Horse Lords of Riverdale</button>
+        <button mat-menu-item routerLink="/subfaction/2">The Shining Company</button>
+        <!-- <button mat-menu-item>Cities of the Northern Coast</button> -->
+        <!-- <button mat-menu-item>The Towers of Elduar</button> -->
+      </mat-menu>
+
+      <mat-menu #neCharacters="matMenu">
+        <button mat-menu-item>Warden of the Flame</button>
+      </mat-menu>
+
+      <mat-menu #neUnits="matMenu">
+        <button mat-menu-item routerLink="/unit/1">House Guard Spearmen</button>
+        <button mat-menu-item routerLink="/unit/2">House Guard Archers</button>
+      </mat-menu>
+
+      <mat-menu #neLegends="matMenu">
+        <button mat-menu-item>The Dragon Price</button>
+      </mat-menu>
+
+      <mat-menu #courtSubfactions="matMenu">
+        <button mat-menu-item>Bloodborn</button>
+        <button mat-menu-item>Stalkers in the Night</button>
+        <button mat-menu-item>The Restless</button>
+      </mat-menu>
+
+      <mat-menu #courtCharacters="matMenu">
+        <button mat-menu-item>Necromancer</button>
+        <button mat-menu-item>Vampire</button>
+      </mat-menu>
+
+      <mat-menu #courtUnits="matMenu">
+        <button mat-menu-item>Ghoul Stalkers</button>
+      </mat-menu>
+
+      <mat-menu #courtLegends="matMenu">
+        <button mat-menu-item>Lord of the Night</button>
+      </mat-menu>
+
       <h1>Nibelung v1.0</h1>
+
     </div>
   </mat-toolbar>
 
-  <mat-sidenav-container class="example-sidenav-container">
-    <mat-sidenav #snav>
-      <mat-nav-list>
-        <a mat-list-item routerLink="/unit/1" (click)="snav.toggle()">High Elves Spearmen</a>
-        <a mat-list-item routerLink="/unit/2" (click)="snav.toggle()">High Elves Archers</a>
-      </mat-nav-list>
-    </mat-sidenav>
-
-    <mat-sidenav-content class="content">
-      <router-outlet> </router-outlet>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
 </div>

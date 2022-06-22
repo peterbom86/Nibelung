@@ -4,7 +4,7 @@ import { Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
 import { Attack, DamageTrack, Unit } from './unit';
 import { map, switchMap } from 'rxjs/operators';
-import { UnitsStateModel } from 'src/app/store/units/unit.state';
+import { AppState, RulesStateModel } from 'src/app/store/units/unit.state';
 
 @Component({
   selector: 'app-unit',
@@ -19,8 +19,8 @@ export class UnitComponent {
     this.unit$ = this.route.paramMap.pipe(
       switchMap((params: ParamMap) => {
         const unitId = params.get('id') as string;
-        return this.store.select((state: UnitsStateModel) =>
-          state.units.find((u) => u.id === unitId)
+        return this.store.select((state: AppState) =>
+          state.rules.units.find((u: Unit) => u.id === unitId)
         );
       })
     );

@@ -3,7 +3,7 @@ import { Attack, BaseStats, BattlefieldObjective, LevelingAbility, Unit, UnitAbi
 export class Archers implements Unit {
   constructor() {
     this.id = "2";
-    this.name = "Noble Elves Archers";
+    this.name = "Noble Elf House Guard Archers";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
 
     this.baseStats = {

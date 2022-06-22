@@ -1,0 +1,67 @@
+.block {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  padding-top: .5rem;
+  padding-bottom: .3rem;
+  background-color: #dfdfdfbb;
+  width: fit-content;
+  border-radius: 3px;
+  min-width: 36rem;
+  max-width: 45rem;
+  height: fit-content;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+td:not(.ability-text):not(.ability-name) {
+  text-align: center;
+}
+
+tr:not(:last-of-type):not(.ability) {
+  border-bottom: 1px dashed;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  min-width: 11rem;
+  border-bottom: 1px solid;
+}
+
+th:not(:last-of-type) {
+  border-right: 1px solid;
+}
+
+.ability > td {
+  padding-top: .1rem;
+  line-height: 25px;
+}
+
+.ability-name-header {
+  text-align: left;
+}
+
+.ability-name {
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+  margin-top: .5rem;
+}
+
+.unit-abilities {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}

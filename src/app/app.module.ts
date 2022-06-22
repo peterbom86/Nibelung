@@ -10,12 +10,16 @@ import { UnitsState } from './store/units/unit.state';
 import { NgxsModule } from '@ngxs/store';
 import { environment } from 'src/environments/environment';
 import { YesnoPipe } from './components/pipes/yesno.pipe';
+import { FactionRulesComponent } from './components/faction/faction-rules/faction-rules.component';
+import { SubfactionComponent } from './components/faction/subfaction/subfaction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UnitComponent,
-    YesnoPipe
+    YesnoPipe,
+    FactionRulesComponent,
+    SubfactionComponent
   ],
   imports: [
     BrowserModule,

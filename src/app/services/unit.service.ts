@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
+import { Faction } from '../components/faction/faction-rules/faction';
+import { Subfaction } from '../components/faction/subfaction/subfaction';
 import { Unit } from '../components/unit/unit';
-import { UNITS } from '../data/NobleElves/NobleElves_units';
+import { FACTIONS, SUBFACTIONS, UNITS } from '../data/AllData';
 
 @Injectable({
   providedIn: 'root'
@@ -11,5 +13,13 @@ export class UnitService {
 
   getUnits(): Unit[] {
     return UNITS;
+  }
+
+  getSubfactions(): Subfaction[] {
+    return SUBFACTIONS;
+  }
+
+  getFactions(): Faction[] {
+    return FACTIONS;
   }
 }

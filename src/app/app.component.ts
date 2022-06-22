@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngxs/store';
-import { LoadUnits } from './store/units/unit.actions';
+import { LoadFactions, LoadSubfactions, LoadUnits } from './store/units/unit.actions';
 
 @Component({
   selector: 'app-root',
@@ -13,5 +13,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.store.dispatch(new LoadUnits());
+    this.store.dispatch(new LoadFactions());
+    this.store.dispatch(new LoadSubfactions());
   }
 }

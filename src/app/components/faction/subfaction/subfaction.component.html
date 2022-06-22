@@ -1,0 +1,62 @@
+<div *ngIf="subfaction$ | async as subfaction">
+  <div fxLayout="row" fxLayoutAlign="center center" class="logo">
+    <img src="{{subfaction.imageUrl}}" fxFlex="100">
+  </div>
+
+  <div class="block">
+    <h1>
+      {{ subfaction.name }}
+    </h1>
+
+    <h4>
+      Starting units
+    </h4>
+    {{ subfaction.startingUnits }}
+
+    <h4>
+      Unit limitations
+    </h4>
+    <div *ngFor="let limitation of subfaction.unitLimitationRules">
+      {{ limitation}}
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="unit-abilities">
+      Special Rules
+    </div>
+    <table>
+      <tr>
+        <th class="ability-name-header">Name</th>
+        <th>Description</th>
+      </tr>
+      <tbody *ngFor="let specialRule of subfaction.specialRules">
+        <tr class="ability">
+          <td class="ability-name">{{ specialRule.name }}</td>
+          <td>{{ specialRule.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block">
+    <div class="unit-abilities">
+      Feats
+    </div>
+    <table>
+      <tr>
+        <th class="ability-name-header">Name</th>
+        <th>Description</th>
+      </tr>
+      <tbody *ngFor="let feat of subfaction.feats">
+        <tr class="ability">
+          <td class="ability-name">{{ feat.name }}</td>
+          <td>{{ feat.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+</div>

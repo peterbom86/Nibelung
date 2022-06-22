@@ -1,0 +1,23 @@
+<div *ngIf="faction$ | async as faction">
+  <div fxLayout="row" fxLayoutAlign="center center" class="logo">
+    <img src="{{faction.imageUrl}}" fxFlex="100">
+  </div>
+
+  <div class="block">
+    <div class="title">
+      {{ faction.name }}
+    </div>
+    <table>
+      <tr>
+        <th>CPs</th>
+        <th>Mana</th>
+        <th>Upkeep</th>
+      </tr>
+      <tr class="ability">
+        <td>{{ faction.commandPoints }}</td>
+        <td>{{ faction.manaPoints }}</td>
+        <td>{{ faction.upkeepRules }}</td>
+      </tr>
+    </table>
+  </div>
+</div>
