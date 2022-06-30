@@ -13,7 +13,7 @@
       <mat-menu #nobleElves="matMenu">
         <button mat-menu-item routerLink="/faction/1">Faction Rules</button>
         <button mat-menu-item [matMenuTriggerFor]="neSubfactions">Subfactions</button>
-        <!-- <button mat-menu-item [matMenuTriggerFor]="neCharacters">Characters</button> -->
+        <button mat-menu-item [matMenuTriggerFor]="neCharacters">Characters</button>
         <button mat-menu-item [matMenuTriggerFor]="neUnits">Units</button>
         <!-- <button mat-menu-item [matMenuTriggerFor]="neLegends">Legends</button> -->
       </mat-menu>
@@ -34,12 +34,14 @@
       </mat-menu>
 
       <mat-menu #neCharacters="matMenu">
-        <button mat-menu-item>Warden of the Flame</button>
+        <button mat-menu-item  routerLink="/unit/4">Fireborn Mage</button>
       </mat-menu>
 
       <mat-menu #neUnits="matMenu">
         <button mat-menu-item routerLink="/unit/1">House Guard Spearmen</button>
         <button mat-menu-item routerLink="/unit/2">House Guard Archers</button>
+        <button mat-menu-item routerLink="/unit/3">Giant Eagle</button>
+        <button mat-menu-item routerLink="/unit/5">Bolt Thrower</button>
       </mat-menu>
 
       <mat-menu #neLegends="matMenu">

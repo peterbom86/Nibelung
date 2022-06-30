@@ -3,8 +3,11 @@ export interface Unit {
   name: string;
   imageUrl: string;
   baseStats: BaseStats;
-  abilities: UnitAbility[];
-  levelingAbilities: LevelingAbility[];
+  activeAbilities: ActiveAbility[];
+  passiveAbilities: PassiveAbility[];
+  spells: Spell[];
+  activeLevelingAbilities: ActiveLevelingAbility[];
+  passiveLevelingAbilities: PassiveLevelingAbility[];
   attacks: Attack[];
   objectives: BattlefieldObjective[];
 }
@@ -18,7 +21,7 @@ export interface BaseStats {
   base: string;
 }
 
-export interface UnitAbility {
+export interface ActiveAbility {
   name: string;
   cost: string;
   costCanBePaidWithSymbol: boolean;
@@ -27,7 +30,26 @@ export interface UnitAbility {
   description: string;
 }
 
-export interface LevelingAbility extends UnitAbility {
+export interface PassiveAbility {
+  name: string;
+  description: string;
+}
+
+export interface Spell {
+  name: string;
+  cost: string;
+  costCanBePaidWithSymbol: boolean;
+  range: string;
+  timesPerTurn: string;
+  description: string;
+}
+
+export interface ActiveLevelingAbility extends ActiveAbility {
+  experienceCost: string;
+}
+
+export interface PassiveLevelingAbility extends PassiveAbility {
+  experienceCost: string;
 }
 
 export interface DamageTrack {

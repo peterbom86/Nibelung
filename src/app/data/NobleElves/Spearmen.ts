@@ -1,4 +1,4 @@
-import { Attack, BaseStats, BattlefieldObjective, LevelingAbility, Unit, UnitAbility } from "src/app/components/unit/unit";
+import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObjective, PassiveAbility, PassiveLevelingAbility, Spell, Unit } from "src/app/components/unit/unit";
 
 export class Spearmen implements Unit {
   constructor() {
@@ -15,7 +15,7 @@ export class Spearmen implements Unit {
       base: '50mm'
     };
 
-    this.abilities = [
+    this.activeAbilities = [
       {
         name: 'Glimmering Shields',
         cost: '1 CMD',
@@ -25,12 +25,15 @@ export class Spearmen implements Unit {
         description: 'During target units next combat round, it rolls one fewer dice with each attack, down to a min. of one.'
       }];
 
-    this.levelingAbilities = [{
+    this.passiveAbilities = [];
+
+    this.activeLevelingAbilities = [{
       name: 'Shield Wall',
       cost: '1 CMD',
       costCanBePaidWithSymbol: false,
       range: 'Self',
       oncePerTurn: true,
+      experienceCost: '2 xp',
       description: 'A unit can use this ability as part of an advance order. The unit will receive a +1/+2/+0 bonus to its defence, but suffer a -2” movement penalty as long as the ability is in effect. The effect can be ended anytime just before receiving an order. The unit can only select defensive combat orders.'
     },
     {
@@ -39,8 +42,11 @@ export class Spearmen implements Unit {
       costCanBePaidWithSymbol: false,
       range: 'Self',
       oncePerTurn: true,
+      experienceCost: '2 xp',
       description: 'The unit can use this command as a reaction to being charged by a cavalry unit while not engaged by any other unit. This unit gets to make an attack immediately, as part of the enemy units activation. In the following combat round, the enemy unit loses any charge bonus for attacks targeting this unit.'
     }];
+
+    this.passiveLevelingAbilities = [];
 
     this.attacks = [
       {
@@ -70,14 +76,19 @@ export class Spearmen implements Unit {
         reward: '1 VP',
         description: ' When scoring VP for controlling an objective, this unit scores 1 extra VP.'
       }];
+
+    this.spells = [];
   }
 
   id: string;
   name: string;
   imageUrl: string;
   baseStats: BaseStats;
-  abilities: UnitAbility[];
-  levelingAbilities: LevelingAbility[];
+  activeAbilities: ActiveAbility[];
+  passiveAbilities: PassiveAbility[];
+  activeLevelingAbilities: ActiveLevelingAbility[];
+  passiveLevelingAbilities: PassiveLevelingAbility[];
   attacks: Attack[];
   objectives: BattlefieldObjective[];
+  spells: Spell[];
 }
