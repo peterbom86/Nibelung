@@ -5,6 +5,7 @@ import { Archers } from "./NobleElves/Archers";
 import { BoltThrower } from "./NobleElves/Bolt Thrower";
 import { FireBornMage } from "./NobleElves/FireBornMage";
 import { GiantEagle } from "./NobleElves/Giant Eagle";
+import { HighBornLord } from "./NobleElves/Highborn Lord";
 import { NobleElvesFaction } from "./NobleElves/nobleElvesFaction";
 import { HORSELORDS, SHINING_COMPANY } from "./NobleElves/NobleElvesSubfactions";
 import { Spearmen } from "./NobleElves/Spearmen";
@@ -16,6 +17,7 @@ export const UNITS: Unit[] =
   new GiantEagle(),
   new FireBornMage(),
   new BoltThrower(),
+  new HighBornLord(),
 ]
 
 export const FACTIONS: Faction[] =
