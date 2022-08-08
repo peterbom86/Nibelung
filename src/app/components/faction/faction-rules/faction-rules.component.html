@@ -4,6 +4,24 @@
   </div>
 
   <div class="block">
+    <div class="unit-abilities">
+      Special Rules
+    </div>
+    <table>
+      <tr>
+        <th class="ability-name-header">Name</th>
+        <th>Description</th>
+      </tr>
+      <tbody *ngFor="let specialRule of faction.specialRules">
+        <tr class="ability">
+          <td class="ability-name">{{ specialRule.name }}</td>
+          <td>{{ specialRule.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="block">
     <div class="title">
       {{ faction.name }}
     </div>

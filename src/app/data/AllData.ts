@@ -9,6 +9,7 @@ import { HighBornLord } from "./NobleElves/Highborn Lord";
 import { NobleElvesFaction } from "./NobleElves/nobleElvesFaction";
 import { HORSELORDS, SHINING_COMPANY } from "./NobleElves/NobleElvesSubfactions";
 import { Spearmen } from "./NobleElves/Spearmen";
+import { SanguineCourtFaction } from "./Sanguine Court/SanguineCourtFaction";
 
 export const UNITS: Unit[] =
 [
@@ -22,7 +23,8 @@ export const UNITS: Unit[] =
 
 export const FACTIONS: Faction[] =
 [
-  new NobleElvesFaction()
+  new NobleElvesFaction(),
+  new SanguineCourtFaction()
 ]
 
 export const SUBFACTIONS: Subfaction[] =

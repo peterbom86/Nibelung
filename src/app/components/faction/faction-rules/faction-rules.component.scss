@@ -49,3 +49,17 @@ th:not(:last-of-type) {
 td {
   max-width: 30rem;
 }
+
+.unit-abilities {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.ability-name-header {
+  text-align: left;
+}
+
+.ability-name {
+  font-weight: bold;
+}
