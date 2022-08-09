@@ -16,7 +16,7 @@ export class SanguineCourtFaction implements Faction {
     this.specialRules = [
       {
         name: "Shallow Graves",
-        description: `At the start of the battle, the Sanguine Court player may place up to 3 Shallow Grave markers (25mm) anywhere on the battlefield. \r\n
+        description: `At the start of the battle, the Sanguine Court player may place up to 3 Shallow Grave markers (25mm) anywhere on the battlefield within 5" of an objective. \r\n
          When the owning player casts a Raise Dead spell while within 12" of a Shallow Grave marker, he may choose to use the Shallow Grave marker as the
          point of origin instead of the spellcaster.`
       },

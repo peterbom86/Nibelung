@@ -3,7 +3,7 @@ import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObj
 export class HighBornLord implements Unit {
   constructor() {
     this.id = "6";
-    this.name = "Noble Elf Hignborn Lord on Steed";
+    this.name = "Noble Elf Highborn Lord on Steed";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
 
     this.baseStats = {

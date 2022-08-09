@@ -10,6 +10,8 @@ import { NobleElvesFaction } from "./NobleElves/nobleElvesFaction";
 import { HORSELORDS, SHINING_COMPANY } from "./NobleElves/NobleElvesSubfactions";
 import { Spearmen } from "./NobleElves/Spearmen";
 import { SanguineCourtFaction } from "./Sanguine Court/SanguineCourtFaction";
+import { BLOODBORN, LIVING_DEAD, Nightstalkers } from "./Sanguine Court/SanguineCourtSubfactions";
+import { TheRestless } from "./Sanguine Court/TheRestless";
 
 export const UNITS: Unit[] =
 [
@@ -19,6 +21,7 @@ export const UNITS: Unit[] =
   new FireBornMage(),
   new BoltThrower(),
   new HighBornLord(),
+  new TheRestless(),
 ]
 
 export const FACTIONS: Faction[] =
@@ -29,5 +32,5 @@ export const FACTIONS: Faction[] =
 
 export const SUBFACTIONS: Subfaction[] =
 [
-  HORSELORDS, SHINING_COMPANY
+  HORSELORDS, SHINING_COMPANY, BLOODBORN, LIVING_DEAD, Nightstalkers
 ]

@@ -19,11 +19,11 @@
       </mat-menu>
 
       <mat-menu #court="matMenu">
-        <button mat-menu-item  routerLink="/faction/2">Faction Rules</button>
+        <button mat-menu-item routerLink="/faction/2">Faction Rules</button>
         <button mat-menu-item [matMenuTriggerFor]="courtSubfactions">Subfactions</button>
         <button mat-menu-item [matMenuTriggerFor]="courtCharacters">Characters</button>
         <button mat-menu-item [matMenuTriggerFor]="courtUnits">Units</button>
-        <button mat-menu-item [matMenuTriggerFor]="courtLegends">Legends</button>
+        <!-- <button mat-menu-item [matMenuTriggerFor]="courtLegends">Legends</button> -->
       </mat-menu>
 
       <mat-menu #neSubfactions="matMenu">
@@ -34,8 +34,8 @@
       </mat-menu>
 
       <mat-menu #neCharacters="matMenu">
-        <button mat-menu-item  routerLink="/unit/4">Fireborn Mage</button>
-        <button mat-menu-item  routerLink="/unit/6">Highborn Lord</button>
+        <button mat-menu-item routerLink="/unit/4">Fireborn Mage</button>
+        <button mat-menu-item routerLink="/unit/6">Highborn Lord</button>
       </mat-menu>
 
       <mat-menu #neUnits="matMenu">
@@ -46,26 +46,29 @@
       </mat-menu>
 
       <mat-menu #neLegends="matMenu">
-        <button mat-menu-item>The Dragon Price</button>
+        <!-- <button mat-menu-item>The Dragon Price</button> -->
       </mat-menu>
 
       <mat-menu #courtSubfactions="matMenu">
-        <button mat-menu-item>Bloodborn</button>
-        <button mat-menu-item>Stalkers in the Night</button>
-        <button mat-menu-item>The Restless</button>
+        <button mat-menu-item routerLink="/subfaction/SC1">Bloodborn</button>
+        <button mat-menu-item routerLink="/subfaction/SC2">The Living Dead</button>
+        <button mat-menu-item routerLink="/subfaction/SC3">Nightstalkers</button>
       </mat-menu>
 
       <mat-menu #courtCharacters="matMenu">
-        <button mat-menu-item>Necromancer</button>
-        <button mat-menu-item>Vampire</button>
+        <!-- <button mat-menu-item>Necromancer</button>
+        <button mat-menu-item>Nighthaunt Vampire</button> -->
       </mat-menu>
 
       <mat-menu #courtUnits="matMenu">
-        <button mat-menu-item>Ghoul Stalkers</button>
+        <button mat-menu-item routerLink="/unit/SC1">The Restless</button>
+        <!-- <button mat-menu-item routerLink="/unit/SC2">Wailing Ghouls</button>
+        <button mat-menu-item routerLink="/unit/SC3">Blood Knights</button>
+        <button mat-menu-item routerLink="/unit/SC4">Werewolf Pack</button> -->
       </mat-menu>
 
       <mat-menu #courtLegends="matMenu">
-        <button mat-menu-item>Lord of the Night</button>
+        <!-- <button mat-menu-item>Lord of the Night</button> -->
       </mat-menu>
 
       <h1>Nibelung v1.0</h1>
