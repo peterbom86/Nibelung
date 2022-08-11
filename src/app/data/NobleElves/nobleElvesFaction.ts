@@ -32,7 +32,7 @@ export class NobleElvesFaction implements Faction {
       }
     ];
 
-    this.upkeepRules = "1 CP for every second unit in excess of 6.";
+    this.upkeepRules = "1 CP for every second unit in excess of 6. 1 CP for every unit in excess of 10";
     this.commandPoints = 14;
     this.manaPoints = 12;
   }

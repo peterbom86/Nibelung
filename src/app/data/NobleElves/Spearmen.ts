@@ -11,7 +11,7 @@ export class Spearmen implements Unit {
       defense: '4/4/4',
       resilience: '1',
       hp: '12',
-      cost: '2 CMD',
+      cost: '2 req.',
       base: '50mm'
     };
 

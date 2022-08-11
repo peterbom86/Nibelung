@@ -11,7 +11,7 @@ export class HighBornLord implements Unit {
       defense: '4/3/4',
       resilience: '2',
       hp: '5',
-      cost: '2 CMD',
+      cost: '4 req.',
       base: '25mm'
     };
 

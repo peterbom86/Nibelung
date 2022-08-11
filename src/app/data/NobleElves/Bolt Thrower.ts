@@ -12,7 +12,7 @@ export class BoltThrower implements Unit {
       defense: '1/1/1',
       resilience: '1',
       hp: '5',
-      cost: '2 CMD',
+      cost: '2 req.',
       base: '40mm'
     };
 

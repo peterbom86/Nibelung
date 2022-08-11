@@ -11,7 +11,7 @@ export class Archers implements Unit {
       defense: '2/3/4',
       resilience: '0',
       hp: '10',
-      cost: '3 CMD',
+      cost: '3 req.',
       base: '40mm'
     };
 

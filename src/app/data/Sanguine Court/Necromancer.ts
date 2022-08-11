@@ -1,17 +1,17 @@
 import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObjective, PassiveAbility, PassiveLevelingAbility, Spell, Unit } from "src/app/components/unit/unit";
 
-export class FireBornMage implements Unit {
+export class Necromancer implements Unit {
   constructor() {
-    this.id = "4";
-    this.name = "Noble Elf Fireborn Mage";
+    this.id = "SC2";
+    this.name = "Sanguine Court Necromancer";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
 
     this.baseStats = {
-      movement: '4" / 7"',
-      defense: '3/4/5',
+      movement: '3" / 6"',
+      defense: '1/2/5',
       resilience: '0',
       hp: '5',
-      cost: '4 req.',
+      cost: '3 req.',
       base: '25mm'
     };
 
@@ -25,36 +25,36 @@ export class FireBornMage implements Unit {
 
     this.spells = [
       {
-        name: 'Light of Elyr',
+        name: '',
         cost: '2 MP',
         costCanBePaidWithSymbol: false,
         range: '10”',
         timesPerTurn: '1',
-        description: 'A single ray of moonlight lights up the target enemy unit, giving friendly units +1/+0 to their ranged attacks targeting this unit'
+        description: ''
       },
       {
-        name: 'Arrows of Burning Mithril',
+        name: '',
         cost: '2 MP',
         costCanBePaidWithSymbol: false,
         range: '6”',
         timesPerTurn: '1',
-        description: 'Target friendly unit gain +0/+1 to their attack while using a ranged weapon'
+        description: ''
       },
       {
-        name: 'Lys Shield',
+        name: '',
         cost: '2 MP',
         costCanBePaidWithSymbol: false,
         range: '6”',
         timesPerTurn: '2',
-        description: 'Target unit gains a shield of 5 HP with a resilience of 1. This shield replaces the resilience of target unit for all damage taken as long as the shield has any HP left. If an attack exceeds the shields remaining HP, the shield is removed, but the remaining damage is lost'
+        description: ``
       },
       {
-        name: 'Flaming Meteor',
+        name: '',
         cost: '2 MP',
         costCanBePaidWithSymbol: false,
         range: '10”',
         timesPerTurn: '*',
-        description: 'Place a 25mm base anywhere within range. At the end of the next turn, models within 2” of that base is hit and suffers D6+5 damage'
+        description: ``
       }
     ]
 
@@ -62,9 +62,9 @@ export class FireBornMage implements Unit {
 
     this.passiveLevelingAbilities = [
       {
-        name: 'Power overwhelming',
+        name: '',
         experienceCost: '4 xp',
-        description: 'Gains the spell Flaming meteor for one cast per turn'
+        description: 'Gains the spell xxxxx for one cast per turn'
       }
     ];
 
@@ -72,16 +72,16 @@ export class FireBornMage implements Unit {
       {
         name: 'Spells',
         range: '*',
-        dice: '4/3',
+        dice: '3/2',
         attacks: '*',
         rend: '*',
         flankBonus: ['-'],
         damageTracks: []
       },
       {
-        name: 'Elven Sword',
+        name: 'Withered Staff',
         range: 'Melee',
-        dice: '2/2',
+        dice: '1/1',
         attacks: '1',
         rend: '0',
         flankBonus: ['+0/+0'],
@@ -93,7 +93,13 @@ export class FireBornMage implements Unit {
           }]
       }];
 
-    this.objectives = [];
+    this.objectives = [
+      {
+        name: 'Prized Servant of The Undying King',
+        description: `If this model is destroyed, the opponent player gains 1 VP`,
+        reward: '1 VP to opponent player.'
+      }
+    ];
   }
 
   id: string;

@@ -29,12 +29,11 @@ export class SanguineCourtFaction implements Faction {
       },
       {
         name: "Longing for the Grave",
-        description: `All units with the 'Raised' keyword in this army can only receive orders if within 6" of a friendly Necromancer. While outside of 6" of a friendly Necromancer,
-         these units take 2 damage at the start of each turn.`
+        description: `All units with the 'Raised' keyword in this army can only receive orders if within 6" of a friendly Necromancer.`
       }
     ];
 
-    this.upkeepRules = "1 CP for every second unit in excess of 8.";
+    this.upkeepRules = "1 CP for every second unit in excess of 8. 1 CP for every unit in excess of 12";
     this.commandPoints = 12;
     this.manaPoints = 12;
   }

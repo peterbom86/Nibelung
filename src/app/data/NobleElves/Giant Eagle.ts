@@ -11,7 +11,7 @@ export class GiantEagle implements Unit {
       defense: '4/3/3',
       resilience: '1',
       hp: '10',
-      cost: '3 CMD',
+      cost: '2 req.',
       base: '40mm'
     };
 

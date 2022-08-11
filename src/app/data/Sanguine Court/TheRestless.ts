@@ -11,7 +11,7 @@ export class TheRestless implements Unit {
       defense: '3/3/1',
       resilience: '2',
       hp: '15',
-      cost: '2 CMD',
+      cost: '2 req.',
       base: '50mm'
     };
 
@@ -29,7 +29,8 @@ export class TheRestless implements Unit {
     this.passiveAbilities = [
       {
         name: 'Restless Bones',
-        description: `At the end of every turn, this unit heals 2 HP.`
+        description: `At the end of every turn, if this unit is within 6" of a friendly Necromancer, this unit heals 2 HP.
+         If not, this unit suffers 2 damage.`
       },
       {
         name: 'Raised',
