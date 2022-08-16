@@ -3,7 +3,7 @@ import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObj
 export class Necromancer implements Unit {
   constructor() {
     this.id = "SC2";
-    this.name = "Sanguine Court Necromancer";
+    this.name = "Necromancer";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
 
     this.baseStats = {
@@ -25,36 +25,37 @@ export class Necromancer implements Unit {
 
     this.spells = [
       {
-        name: '',
-        cost: '2 MP',
-        costCanBePaidWithSymbol: false,
-        range: '10”',
-        timesPerTurn: '1',
-        description: ''
-      },
-      {
-        name: '',
+        name: 'Raise Dead',
         cost: '2 MP',
         costCanBePaidWithSymbol: false,
         range: '6”',
         timesPerTurn: '1',
-        description: ''
+        description: 'Summon a Restless unit within 6” of this unit. The summoned unit enters the game with a command token (hence it cannot be activated this turn, but can be summoned into combat).'
       },
       {
-        name: '',
-        cost: '2 MP',
+        name: 'Unholy Vigor',
+        cost: '1 MP',
         costCanBePaidWithSymbol: false,
         range: '6”',
         timesPerTurn: '2',
-        description: ``
+        description: 'Heal target Restless unit for 5 HP. The target unit gain +1 resilience for the rest of the turn.'
       },
       {
-        name: '',
+        name: 'Hands from below',
+        cost: '1 MP',
+        costCanBePaidWithSymbol: false,
+        range: '12”',
+        timesPerTurn: '2',
+        description: `Target an enemy unit within 12" of this model and within 6" of a Grave Marker. The targeted unit suffers 2 damage and loses 2" movement in the next turn.
+         A flying unit cannot be targeted by this ability.`
+      },
+      {
+        name: 'All-Consuming darkness',
         cost: '2 MP',
         costCanBePaidWithSymbol: false,
-        range: '10”',
+        range: '6”',
         timesPerTurn: '*',
-        description: ``
+        description: `Enemy models suffer -1/-0 attack dice when making ranged attacks targeting an unit within 6" of this model.`
       }
     ]
 
@@ -62,9 +63,9 @@ export class Necromancer implements Unit {
 
     this.passiveLevelingAbilities = [
       {
-        name: '',
+        name: 'Dark Ritual',
         experienceCost: '4 xp',
-        description: 'Gains the spell xxxxx for one cast per turn'
+        description: 'Gains the spell All-Consuming darkness for one cast per turn'
       }
     ];
 

@@ -9,9 +9,11 @@ import { HighBornLord } from "./NobleElves/Highborn Lord";
 import { NobleElvesFaction } from "./NobleElves/nobleElvesFaction";
 import { HORSELORDS, SHINING_COMPANY } from "./NobleElves/NobleElvesSubfactions";
 import { Spearmen } from "./NobleElves/Spearmen";
+import { Necromancer } from "./Sanguine Court/Necromancer";
 import { SanguineCourtFaction } from "./Sanguine Court/SanguineCourtFaction";
 import { BLOODBORN, LIVING_DEAD, Nightstalkers } from "./Sanguine Court/SanguineCourtSubfactions";
 import { TheRestless } from "./Sanguine Court/TheRestless";
+import { WailingGhouls } from "./Sanguine Court/WailingGhouls";
 
 export const UNITS: Unit[] =
 [
@@ -22,6 +24,8 @@ export const UNITS: Unit[] =
   new BoltThrower(),
   new HighBornLord(),
   new TheRestless(),
+  new Necromancer(),
+  new WailingGhouls(),
 ]
 
 export const FACTIONS: Faction[] =

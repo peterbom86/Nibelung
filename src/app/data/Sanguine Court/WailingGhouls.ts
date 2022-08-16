@@ -1,32 +1,35 @@
 import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObjective, PassiveAbility, PassiveLevelingAbility, Spell, Unit } from "src/app/components/unit/unit";
 
-export class TheRestless implements Unit {
+/// Designers notes
+/// This unit is a fast and cheap unit, but it is not very strong. It has some good scenario play since it has multiple ways of scoring VPs.
+
+export class WailingGhouls implements Unit {
   constructor() {
-    this.id = "SC1";
-    this.name = "Restless";
+    this.id = "SC3";
+    this.name = "Wailing Ghouls";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
 
     this.baseStats = {
-      movement: '3" / 6"',
-      defense: '3/3/1',
-      resilience: '2',
-      hp: '15',
-      cost: '2 req.',
+      movement: '4" / 7"',
+      defense: '3/4/1',
+      resilience: '0',
+      hp: '10',
+      cost: '1 req.',
       base: '50mm'
     };
 
     this.activeAbilities = [
+
     ];
 
     this.passiveAbilities = [
       {
-        name: 'Restless Bones',
-        description: `At the end of every turn, if this unit is within 6" of a friendly Necromancer, this unit heals 2 HP.
-         If not, this unit suffers 2 damage.`
+        name: 'Stench of Death',
+        description: `Enemy units in melee with this unit suffers -1/-1 when making attacks.`
       },
       {
-        name: 'Raised',
-        description: `This unit has the 'Raised' Keyword.`
+        name: 'Horrible Wailing',
+        description: `Enemy units receiving orders while within 4" of this unit must pay an additional CP for the order to take effect.`
       }
     ];
 
@@ -37,12 +40,12 @@ export class TheRestless implements Unit {
 
     this.attacks = [
       {
-        name: 'Spear',
+        name: 'Clubs, Maces, Daggers',
         range: 'Melee',
-        dice: '3/2',
-        attacks: '2',
-        rend: '1',
-        flankBonus: ['+0/+1', '-1 defense vs. melee'],
+        dice: '4/2',
+        attacks: '3',
+        rend: '0',
+        flankBonus: ['+1/+1'],
         damageTracks: [
           {
             hits1: '2 dmg',
@@ -56,6 +59,16 @@ export class TheRestless implements Unit {
       }];
 
     this.objectives = [
+      {
+        name: 'Flesh Eaters',
+        description: `Whenever this unit destroys an enemy unit, it gains 1 VP.`,
+        reward: `1 VP`
+      },
+      {
+        name: 'Grave Robbers',
+        description: `Whenever this unit controls a Grave Marker on the opponents half of the map, score 1 additional VP.`,
+        reward: `1 VP`
+      }
     ];
 
     this.spells = [];
