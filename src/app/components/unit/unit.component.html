@@ -79,14 +79,14 @@
                 <th *ngIf="hasEightHits(attack)">8 hits</th>
               </tr>
               <tr *ngFor="let track of attack.damageTracks" class="damage-profile">
-                <td *ngIf="hasOneHit(attack)">{{ track.hits1 }}</td>
-                <td *ngIf="hasTwoHits(attack)">{{ track.hits2 }}</td>
-                <td *ngIf="hasThreeHits(attack)">{{ track.hits3 }}</td>
-                <td *ngIf="hasFourHits(attack)">{{ track.hits4 }}</td>
-                <td *ngIf="hasFiveHits(attack)">{{ track.hits5 }}</td>
-                <td *ngIf="hasSixHits(attack)">{{ track.hits6 }}</td>
-                <td *ngIf="hasSevenHits(attack)">{{ track.hits7 }}</td>
-                <td *ngIf="hasEightHits(attack)">{{ track.hits8 }}</td>
+                <td *ngIf="hasOneHit(attack)"><div *ngIf="track.hits1 === 'Symbol' else h1"><img class="effect-logo2" src="../../../assets/FE.png"></div><ng-template #h1>{{ track.hits1 }}</ng-template></td>
+                <td *ngIf="hasTwoHits(attack)"><div *ngIf="track.hits2 === 'Symbol' else h2"><img class="effect-logo2" src="../../../assets/FE.png"></div><ng-template #h2>{{ track.hits2 }}</ng-template></td>
+                <td *ngIf="hasThreeHits(attack)"><div *ngIf="track.hits3 === 'Symbol' else h3"><img class="effect-logo2" src="../../../assets/FE.png"></div><ng-template #h3>{{ track.hits3 }}</ng-template></td>
+                <td *ngIf="hasFourHits(attack)"><div *ngIf="track.hits4 === 'Symbol' else h4"><img class="effect-logo2" src="../../../assets/FE.png"></div><ng-template #h4>{{ track.hits4 }}</ng-template></td>
+                <td *ngIf="hasFiveHits(attack)"><div *ngIf="track.hits5 === 'Symbol' else h5"><img class="effect-logo2" src="../../../assets/FE.png"></div><ng-template #h5>{{ track.hits5 }}</ng-template></td>
+                <td *ngIf="hasSixHits(attack)"><div *ngIf="track.hits6 === 'Symbol' else h6"><img class="effect-logo2" src="../../../assets/FE.png"></div><ng-template #h6>{{ track.hits6 }}</ng-template></td>
+                <td *ngIf="hasSevenHits(attack)"><div *ngIf="track.hits7 === 'Symbol' else h7"><img class="effect-logo2" src="../../../assets/FE.png"></div><ng-template #h7>{{ track.hits7 }}</ng-template></td>
+                <td *ngIf="hasEightHits(attack)"><div *ngIf="track.hits8 === 'Symbol' else h8"><img class="effect-logo2" src="../../../assets/FE.png"></div><ng-template #h8>{{ track.hits8 }}</ng-template></td>
               </tr>
             </table>
           </div>

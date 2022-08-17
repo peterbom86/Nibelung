@@ -14,6 +14,7 @@ import { SanguineCourtFaction } from "./Sanguine Court/SanguineCourtFaction";
 import { BLOODBORN, LIVING_DEAD, Nightstalkers } from "./Sanguine Court/SanguineCourtSubfactions";
 import { TheRestless } from "./Sanguine Court/TheRestless";
 import { WailingGhouls } from "./Sanguine Court/WailingGhouls";
+import { WerewolfPack } from "./Sanguine Court/WerewolfPack";
 
 export const UNITS: Unit[] =
 [
@@ -26,6 +27,7 @@ export const UNITS: Unit[] =
   new TheRestless(),
   new Necromancer(),
   new WailingGhouls(),
+  new WerewolfPack(),
 ]
 
 export const FACTIONS: Faction[] =
