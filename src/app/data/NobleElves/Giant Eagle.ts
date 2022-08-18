@@ -17,12 +17,15 @@ export class GiantEagle implements Unit {
 
     this.activeAbilities = [
       {
-        name: 'Roam the skies',
+        name: 'Roam the Skies',
         cost: '1 CP',
         costCanBePaidWithSymbol: false,
         range: 'Self',
         oncePerTurn: true,
-        description: 'When issuing this order, the unit gains the “Roaming the skies” status effect. This unit can remove the status effect at any time during its activation. When this unit performs a charge against a unit not affected by “Roaming the skies”, the status effect ends. (While affected by “roaming the skies” a unit cannot be targeted by melee attacks or charged by non-flying models. Enemy models targeting a model affected by this suffer -1/-1 to their ranged attacks. A model affected by this cannot contest objectives or seize resources.)'
+        description: `When issuing this order, the unit gains the “Roaming the skies” status effect. This unit can remove the status effect at any time during its activation.
+        When this unit performs a charge against a unit not affected by “Roaming the skies”, the status effect ends.
+        \n While affected by “Roam the Skies” a unit cannot be targeted by melee attacks or charged by non-flying models.
+        Enemy models targeting a model affected by this suffer -1/-1 and -6" range to their ranged attacks. A model affected by this cannot contest objectives or seize resources.`
       }
     ];
 
