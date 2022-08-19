@@ -3,6 +3,7 @@ import { Subfaction } from "src/app/components/faction/subfaction/subfaction";
 import { Unit } from "src/app/components/unit/unit";
 import { Archers } from "./NobleElves/Archers";
 import { BoltThrower } from "./NobleElves/Bolt Thrower";
+import { Encampment } from "./NobleElves/Encampment";
 import { FireBornMage } from "./NobleElves/FireBornMage";
 import { GiantEagle } from "./NobleElves/Giant Eagle";
 import { HighBornLord } from "./NobleElves/Highborn Lord";
@@ -14,6 +15,7 @@ import { Necromancer } from "./Sanguine Court/Necromancer";
 import { NighthauntVampire } from "./Sanguine Court/NighthauntVampire";
 import { SanguineCourtFaction } from "./Sanguine Court/SanguineCourtFaction";
 import { BLOODBORN, LIVING_DEAD, Nightstalkers } from "./Sanguine Court/SanguineCourtSubfactions";
+import { Sepulcher } from "./Sanguine Court/Sepulcher";
 import { TheRestless } from "./Sanguine Court/TheRestless";
 import { WailingGhouls } from "./Sanguine Court/WailingGhouls";
 import { WerewolfPack } from "./Sanguine Court/WerewolfPack";
@@ -31,7 +33,9 @@ export const UNITS: Unit[] =
   new WailingGhouls(),
   new WerewolfPack(),
   new BloodKnights(),
-  new NighthauntVampire()
+  new NighthauntVampire(),
+  new Sepulcher(),
+  new Encampment()
 ]
 
 export const FACTIONS: Faction[] =
