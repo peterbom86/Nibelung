@@ -42,3 +42,11 @@ mat-icon {
 .menu-toggle {
   z-index: 100;
 }
+
+.mat-button {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+#text-middle {
+  vertical-align: -webkit-baseline-middle;
+}

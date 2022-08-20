@@ -5,6 +5,7 @@
       <button mat-icon-button class="menu-toggle" [matMenuTriggerFor]="factions">
         <mat-icon>menu</mat-icon>
       </button>
+
       <mat-menu #factions="matMenu">
         <button mat-menu-item [matMenuTriggerFor]="nobleElves">Noble Elves</button>
         <button mat-menu-item [matMenuTriggerFor]="court">The Sanguine Court</button>
@@ -83,6 +84,10 @@
       </mat-menu>
 
       <h1>Nibelung v1.1</h1>
+
+      <button mat-button routerLink="/rules">
+        <span id="text-middle">Rules</span>
+      </button>
 
     </div>
   </mat-toolbar>
