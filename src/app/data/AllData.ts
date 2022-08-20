@@ -1,6 +1,7 @@
 import { Faction } from "src/app/components/faction/faction-rules/faction";
 import { Subfaction } from "src/app/components/faction/subfaction/subfaction";
 import { Unit } from "src/app/components/unit/unit";
+import { NightGoblins } from "./Neutrals/NightGoblin";
 import { Archers } from "./NobleElves/Archers";
 import { BoltThrower } from "./NobleElves/Bolt Thrower";
 import { Encampment } from "./NobleElves/Encampment";
@@ -35,7 +36,8 @@ export const UNITS: Unit[] =
   new BloodKnights(),
   new NighthauntVampire(),
   new Sepulcher(),
-  new Encampment()
+  new Encampment(),
+  new NightGoblins()
 ]
 
 export const FACTIONS: Faction[] =

@@ -8,6 +8,7 @@
       <mat-menu #factions="matMenu">
         <button mat-menu-item [matMenuTriggerFor]="nobleElves">Noble Elves</button>
         <button mat-menu-item [matMenuTriggerFor]="court">The Sanguine Court</button>
+        <button mat-menu-item [matMenuTriggerFor]="neutrals">Neutrals</button>
       </mat-menu>
 
       <mat-menu #nobleElves="matMenu">
@@ -58,7 +59,7 @@
 
       <mat-menu #courtCharacters="matMenu">
         <button mat-menu-item routerLink="/unit/SC2">Necromancer</button>
-         <button mat-menu-item routerLink="/unit/SC6">Nighthaunt Vampire</button>
+        <button mat-menu-item routerLink="/unit/SC6">Nighthaunt Vampire</button>
       </mat-menu>
 
       <mat-menu #courtUnits="matMenu">
@@ -71,6 +72,14 @@
 
       <mat-menu #courtLegends="matMenu">
         <!-- <button mat-menu-item>Lord of the Night</button> -->
+      </mat-menu>
+
+      <mat-menu #neutrals="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="neutralUnits">Units</button>
+      </mat-menu>
+
+      <mat-menu #neutralUnits="matMenu">
+        <button mat-menu-item routerLink="/unit/N1">Night Goblins</button>
       </mat-menu>
 
       <h1>Nibelung v1.1</h1>
