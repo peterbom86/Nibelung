@@ -8,7 +8,7 @@ export class GiantEagle implements Unit {
 
     this.baseStats = {
       movement: '7" / 10"',
-      defense: '4/3/3',
+      defense: '3/2/3',
       resilience: '1',
       hp: '10',
       cost: '2 req.',

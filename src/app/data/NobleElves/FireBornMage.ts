@@ -8,7 +8,7 @@ export class FireBornMage implements Unit {
 
     this.baseStats = {
       movement: '4" / 7"',
-      defense: '3/4/5',
+      defense: '2/3/4',
       resilience: '0',
       hp: '5',
       cost: '4 req.',

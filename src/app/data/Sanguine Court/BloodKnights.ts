@@ -11,7 +11,7 @@ export class BloodKnights implements Unit {
 
     this.baseStats = {
       movement: '7" / 10"',
-      defense: '4/4/4',
+      defense: '3/3/3',
       resilience: '3',
       hp: '15',
       cost: '5 req.',

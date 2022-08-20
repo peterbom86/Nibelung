@@ -8,7 +8,7 @@ export class HighBornLord implements Unit {
 
     this.baseStats = {
       movement: '6" / 9"',
-      defense: '4/3/4',
+      defense: '3/2/3',
       resilience: '2',
       hp: '5',
       cost: '4 req.',

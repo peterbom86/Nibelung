@@ -8,7 +8,7 @@ export class Archers implements Unit {
 
     this.baseStats = {
       movement: '4" / 7"',
-      defense: '2/3/4',
+      defense: '1/2/3',
       resilience: '0',
       hp: '10',
       cost: '3 req.',

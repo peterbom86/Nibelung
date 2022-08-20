@@ -8,7 +8,7 @@ export class Spearmen implements Unit {
 
     this.baseStats = {
       movement: '4" / 7"',
-      defense: '4/4/4',
+      defense: '3/3/3',
       resilience: '1',
       hp: '12',
       cost: '2 req.',

@@ -8,7 +8,7 @@ export class Necromancer implements Unit {
 
     this.baseStats = {
       movement: '3" / 6"',
-      defense: '1/2/5',
+      defense: '0/2/4',
       resilience: '0',
       hp: '5',
       cost: '3 req.',

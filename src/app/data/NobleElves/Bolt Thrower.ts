@@ -9,7 +9,7 @@ export class BoltThrower implements Unit {
 
     this.baseStats = {
       movement: '2"',
-      defense: '1/1/1',
+      defense: '0/1/1',
       resilience: '1',
       hp: '5',
       cost: '2 req.',

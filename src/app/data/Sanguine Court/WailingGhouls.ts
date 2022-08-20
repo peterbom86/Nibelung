@@ -11,7 +11,7 @@ export class WailingGhouls implements Unit {
 
     this.baseStats = {
       movement: '4" / 7"',
-      defense: '3/4/1',
+      defense: '2/3/1',
       resilience: '0',
       hp: '10',
       cost: '1 req.',
