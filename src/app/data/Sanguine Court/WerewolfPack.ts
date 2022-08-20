@@ -43,6 +43,7 @@ export class WerewolfPack implements Unit {
         dice: '4/3',
         attacks: '3',
         rend: '1',
+        chargeBonus: ['+1/+1'],
         flankBonus: ['+2/+1'],
         damageTracks: [
           {

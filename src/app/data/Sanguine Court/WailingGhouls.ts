@@ -45,6 +45,7 @@ export class WailingGhouls implements Unit {
         dice: '4/2',
         attacks: '3',
         rend: '0',
+        chargeBonus: ['+0/+1'],
         flankBonus: ['+1/+1'],
         damageTracks: [
           {

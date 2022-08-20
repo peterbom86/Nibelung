@@ -60,6 +60,7 @@ export class HighBornLord implements Unit {
         dice: '3/3',
         attacks: '2',
         rend: '0',
+        chargeBonus: ['+1/+1'],
         flankBonus: ['+1/+1'],
         damageTracks: [
           {

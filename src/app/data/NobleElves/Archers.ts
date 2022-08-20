@@ -53,6 +53,7 @@ export class Archers implements Unit {
         dice: '4/2',
         attacks: '2',
         rend: '0',
+        chargeBonus: ['-'],
         flankBonus: ['-'],
         damageTracks: [
           {
@@ -72,6 +73,7 @@ export class Archers implements Unit {
         dice: '2/2',
         attacks: '2',
         rend: '0',
+        chargeBonus: ['-'],
         flankBonus: ['+1/+1'],
         damageTracks: [
           {

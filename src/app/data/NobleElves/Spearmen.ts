@@ -55,7 +55,8 @@ export class Spearmen implements Unit {
         dice: '4/3',
         attacks: '2',
         rend: '1',
-        flankBonus: ['+0/+1', '-1 defense vs. melee'],
+        chargeBonus: ['+0/+1', '-1 defense vs. melee'],
+        flankBonus: ['+1/+0'],
         damageTracks: [
           {
             hits1: '2 dmg',

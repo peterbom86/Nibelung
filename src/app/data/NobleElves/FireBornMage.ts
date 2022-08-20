@@ -75,6 +75,7 @@ export class FireBornMage implements Unit {
         dice: '4/3',
         attacks: '*',
         rend: '*',
+        chargeBonus: ['-'],
         flankBonus: ['-'],
         damageTracks: []
       },
@@ -84,6 +85,7 @@ export class FireBornMage implements Unit {
         dice: '2/2',
         attacks: '1',
         rend: '0',
+        chargeBonus: ['-'],
         flankBonus: ['+0/+0'],
         damageTracks: [
           {

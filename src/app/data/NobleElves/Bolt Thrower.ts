@@ -50,6 +50,7 @@ export class BoltThrower implements Unit {
         dice: '3/3',
         attacks: '2',
         rend: '2',
+        chargeBonus: ['-'],
         flankBonus: ['-'],
         damageTracks: [
           {

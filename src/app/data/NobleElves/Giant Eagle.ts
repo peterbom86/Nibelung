@@ -54,6 +54,7 @@ export class GiantEagle implements Unit {
         dice: '3/3',
         attacks: '2',
         rend: '0',
+        chargeBonus: ['-'],
         flankBonus: ['+1/+1'],
         damageTracks: [
           {

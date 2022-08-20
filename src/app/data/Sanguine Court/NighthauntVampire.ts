@@ -55,6 +55,7 @@ export class NighthauntVampire implements Unit {
         dice: '5/4',
         attacks: '2',
         rend: '1',
+        chargeBonus: ['+1/+1'],
         flankBonus: ['+1/+1'],
         damageTracks: [
           {

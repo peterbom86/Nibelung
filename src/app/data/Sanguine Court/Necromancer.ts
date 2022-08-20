@@ -76,6 +76,7 @@ export class Necromancer implements Unit {
         dice: '3/2',
         attacks: '*',
         rend: '*',
+        chargeBonus: ['-'],
         flankBonus: ['-'],
         damageTracks: []
       },
@@ -85,7 +86,8 @@ export class Necromancer implements Unit {
         dice: '1/1',
         attacks: '1',
         rend: '0',
-        flankBonus: ['+0/+0'],
+        chargeBonus: ['-'],
+        flankBonus: ['-'],
         damageTracks: [
           {
             hits1: '1 dmg',

@@ -40,7 +40,8 @@ export class BloodKnights implements Unit {
         dice: '4/4',
         attacks: '2',
         rend: '2',
-        flankBonus: ['+2/+1', '+1 Rend'],
+        chargeBonus: ['+2/+1', '+1 Rend'],
+        flankBonus: ['+1/+1'],
         damageTracks: [
           {
             hits1: '4 dmg',
