@@ -8,11 +8,12 @@
   <!-- role=list necessary because WebKit removes list semantic when list-style-type: none -->
   <ol class="toc-list" role="list">
 
-    <li>
+    <!-- <li>
       <a routerLink="/rules/introduction">
         <span class="title">Introduction</span>
       </a>
       <ol role="list">
+
         <li>
           <a routerLink="/rules/introduction/about">
             <span class="title">About This Game</span>
@@ -20,88 +21,88 @@
         </li>
 
       </ol>
-    </li>
+    </li> -->
 
     <li>
-      <a routerLink="/rules/profiles">
+      <a routerLink="profiles">
         <span class="title">Profiles</span>
       </a>
       <ol role="list">
 
         <li>
-          <a routerLink="/rules/profiles/dice">
+          <a routerLink="diceProfile">
             <span class="title">Dice Profile</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/profiles/unit">
+          <a routerLink="unitProfile">
             <span class="title">Unit</span>
           </a>
         </li>
 
-        <li>
-          <a routerLink="/rules/profiles/order">
+        <!-- <li>
+          <a routerLink="">
             <span class="title">Orders</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/profiles/round">
+          <a routerLink="">
             <span class="title">Round</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/profiles/turn">
+          <a routerLink="">
             <span class="title">Turn</span>
           </a>
-        </li>
+        </li> -->
 
       </ol>
     </li>
 
-    <li>
-      <a routerLink="/rules/playingTheGame">
+    <!-- <li>
+      <a routerLink="">
         <span class="title">Playing The Game</span>
       </a>
       <ol role="list">
 
         <li>
-          <a routerLink="/rules/roundDescription">
+          <a routerLink="roundDesc">
             <span class="title">Description of a Round</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/turnDescription">
+          <a routerLink="turnDesc">
             <span class="title">Description of a Turn</span>
           </a>
         </li>
 
       </ol>
-    </li>
+    </li> -->
 
     <li>
-      <a routerLink="/rules/playingTheGame">
+      <a routerLink="orders">
         <span class="title">Orders</span>
       </a>
       <ol role="list">
 
         <li>
-          <a routerLink="/rules/roundDescription">
+          <a routerLink="normalOrders">
             <span class="title">Normal Orders</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/turnDescription">
+          <a routerLink="reactiveOrders">
             <span class="title">Reactive Orders</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/turnDescription">
+          <a routerLink="combatOrders">
             <span class="title">Combat Orders</span>
           </a>
         </li>
@@ -110,31 +111,31 @@
     </li>
 
     <li>
-      <a routerLink="/rules/playingTheGame">
+      <a routerLink="otherConcepts">
         <span class="title">Other Concepts</span>
       </a>
       <ol role="list">
 
         <li>
-          <a routerLink="/rules/roundDescription">
+          <a routerLink="flanking">
             <span class="title">Flanking</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/turnDescription">
+          <a routerLink="pushes">
             <span class="title">Pushes</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/turnDescription">
+          <a routerLink="xp">
             <span class="title">Experience and Leveling</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/roundDescription">
+          <a routerLink="legends">
             <span class="title">Legendary Heroes</span>
           </a>
         </li>
@@ -143,31 +144,25 @@
     </li>
 
     <li>
-      <a routerLink="/rules/playingTheGame">
+      <a routerLink="magic">
         <span class="title">Magic</span>
       </a>
       <ol role="list">
 
         <li>
-          <a routerLink="/rules/roundDescription">
-            <span class="title">Arcana</span>
+          <a routerLink="types">
+            <span class="title">Types</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/turnDescription">
-            <span class="title">Enchancements</span>
-          </a>
-        </li>
-
-        <li>
-          <a routerLink="/rules/turnDescription">
+          <a routerLink="castingSpells">
             <span class="title">Casting Spells</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/turnDescription">
+          <a routerLink="countering">
             <span class="title">Countering Spells</span>
           </a>
         </li>
@@ -176,25 +171,25 @@
     </li>
 
     <li>
-      <a routerLink="/rules/playingTheGame">
+      <a routerLink="armyRecruitment">
         <span class="title">Army Recruitment</span>
       </a>
       <ol role="list">
 
         <li>
-          <a routerLink="/rules/roundDescription">
+          <a routerLink="recruiting">
             <span class="title">Recruiting</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/turnDescription">
+          <a routerLink="upkeep">
             <span class="title">Upkeep</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/turnDescription">
+          <a routerLink="fieldAllowance">
             <span class="title">Maximum Field Allowance</span>
           </a>
         </li>
@@ -203,7 +198,7 @@
     </li>
 
     <li>
-      <a routerLink="/rules/playingTheGame">
+      <a routerLink="terrain">
         <span class="title">Terrain</span>
       </a>
       <ol role="list">
@@ -218,26 +213,32 @@
     </li>
 
     <li>
-      <a routerLink="/rules/playingTheGame">
+      <a routerLink="scenarios">
         <span class="title">Scenarios</span>
       </a>
       <ol role="list">
 
         <li>
-          <a routerLink="/rules/roundDescription">
+          <a routerLink="scenarioStructure">
             <span class="title">Scenario Structure</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/roundDescription">
+          <a routerLink="scenarioElements">
             <span class="title">Scenario Elements</span>
           </a>
         </li>
 
         <li>
-          <a routerLink="/rules/roundDescription">
+          <a routerLink="victoryConditions">
             <span class="title">Common Victory Conditions</span>
+          </a>
+        </li>
+
+        <li>
+          <a routerLink="exampleScenario">
+            <span class="title">Example Scenario</span>
           </a>
         </li>
 
@@ -245,12 +246,12 @@
     </li>
 
     <li>
-      <a routerLink="/rules/playingTheGame">
+      <a routerLink="factions">
         <span class="title">Factions</span>
       </a>
       <ol role="list">
 
-        <li>
+        <!-- <li>
           <a routerLink="/rules/roundDescription">
             <span class="title">Structure of a Faction</span>
           </a>
@@ -260,7 +261,7 @@
           <a routerLink="/rules/roundDescription">
             <span class="title">Overview of Factions</span>
           </a>
-        </li>
+        </li> -->
 
       </ol>
     </li>
