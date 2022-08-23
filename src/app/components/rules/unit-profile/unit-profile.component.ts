@@ -11,5 +11,4 @@ export class UnitProfileComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

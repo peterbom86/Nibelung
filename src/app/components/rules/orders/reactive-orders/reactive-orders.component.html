@@ -1,1 +1,79 @@
-<p>reactive-orders works!</p>
+<div class="ml-1">
+  <h2>Reactive Orders</h2>
+
+  <p class="cursive">
+    When the opposing player declares a charge order, an un-engaged unit can declare a reactive order by spending the
+    required CP.
+    All reactive orders are carried out before the order they are reacting to.
+  </p>
+  <p class="cursive">An engaged unit cannot declare any reactive orders</p>
+
+  <table>
+    <tr>
+      <th>
+        Order Name
+      </th>
+      <th>
+        Cost
+      </th>
+      <th>
+        Effect
+      </th>
+    </tr>
+
+    <tr>
+      <td>Counter Charge</td>
+      <td>1 CP</td>
+      <td>
+        A counter charging unit moves 2” towards the charging unit, then the charging unit moves in.
+        The counter charging unit gets its charge bonus as well for the subsequent combat round.
+      </td>
+    </tr>
+
+    <tr>
+      <td>Stand and shoot</td>
+      <td>1 CP</td>
+      <td>
+        Allows the unit to shoot at the charging enemy unit with a -1/-0 modifier.
+      </td>
+    </tr>
+
+    <tr>
+      <td>Stand fast</td>
+      <td>1 CP</td>
+      <td>
+        Prepares the unit to receive a charge, the enemy unit gains -1/-0 for the subsequent combat phase.
+      </td>
+    </tr>
+
+    <tr>
+      <td>Retreat</td>
+      <td>1 CP</td>
+      <td>
+        <p>Allows the unit to move its normal movement distance with the condition that it must end movement further
+          away from the charging unit.</p>
+
+        <p>After the flee move, the charging unit must be moved 3" towards the fleeing unit.</p>
+        <p>After these moves have been completed, the charging unit must calculate its remaining movement as such:
+          charge movement - 3 = remaining movement.</p>
+        <p>If the fleeing unit is within distance of the remaining movement (still accounting for terrain), the charging unit must complete its charge
+          against it and move into base contact.
+          If not, you check to see if there's any enemy units within the remaining movement distance (accounting for terrain), if so, the
+          charging unit can choose to redirect its charge to this unit for no additional CP cost.</p>
+        <p>
+          If the charge was redirected, you perform a new charge against this unit with the remaning movement as the charge distance, this new target can then as well
+           perform a flee reaction if so desired.
+        </p>
+
+        <p>If the player chooses not to redirect the charge, the charging unit does not move any further and its activation ends.</p>
+
+        <p>If a unit is engaged while fleeing, it will fight with a -2/-2 modifier and its defence is decreased
+        by -2/-2/-0.</p>
+
+        <p>A fleeing unit must be given a rally command before being able to function normally again. A fleeing unit which
+        is not given the rally command at the start of a turn will continue to flee its normal movement away from the
+        nearest enemy model at the begin turn step.</p>
+      </td>
+    </tr>
+  </table>
+</div>
