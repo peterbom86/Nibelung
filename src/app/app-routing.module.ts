@@ -11,7 +11,6 @@ import { FactionsComponent } from './components/rules/factions/factions.componen
 import { CastingSpellsComponent } from './components/rules/magic/casting-spells/casting-spells.component';
 import { CounteringSpellsComponent } from './components/rules/magic/countering-spells/countering-spells.component';
 import { MagicComponent } from './components/rules/magic/magic.component';
-import { SpellTypesComponent } from './components/rules/magic/spell-types/spell-types.component';
 import { CombatOrdersComponent } from './components/rules/orders/combat-orders/combat-orders.component';
 import { NormalOrdersComponent } from './components/rules/orders/normal-orders/normal-orders.component';
 import { OrdersComponent } from './components/rules/orders/orders.component';
@@ -47,7 +46,6 @@ const routes: Routes = [
   { path: 'rules/magic', component: MagicComponent },
   { path: 'rules/castingSpells', component: CastingSpellsComponent },
   { path: 'rules/countering', component: CounteringSpellsComponent },
-  { path: 'rules/spellTypes', component: SpellTypesComponent },
   { path: 'rules/orders', component: OrdersComponent },
   { path: 'rules/combatOrders', component: CombatOrdersComponent },
   { path: 'rules/normalOrders', component: NormalOrdersComponent },

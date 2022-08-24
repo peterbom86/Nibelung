@@ -27,7 +27,6 @@ import { PushesComponent } from './components/rules/other-concepts/pushes/pushes
 import { ExperienceAndLevelingComponent } from './components/rules/other-concepts/experience-and-leveling/experience-and-leveling.component';
 import { LegendaryHeroesComponent } from './components/rules/other-concepts/legendary-heroes/legendary-heroes.component';
 import { MagicComponent } from './components/rules/magic/magic.component';
-import { SpellTypesComponent } from './components/rules/magic/spell-types/spell-types.component';
 import { CastingSpellsComponent } from './components/rules/magic/casting-spells/casting-spells.component';
 import { CounteringSpellsComponent } from './components/rules/magic/countering-spells/countering-spells.component';
 import { ArmyRecruitmentComponent } from './components/rules/army-recruitment/army-recruitment.component';
@@ -64,7 +63,6 @@ import { FactionsComponent } from './components/rules/factions/factions.componen
     ExperienceAndLevelingComponent,
     LegendaryHeroesComponent,
     MagicComponent,
-    SpellTypesComponent,
     CastingSpellsComponent,
     CounteringSpellsComponent,
     ArmyRecruitmentComponent,

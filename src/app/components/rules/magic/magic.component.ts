@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-magic',
   templateUrl: './magic.component.html',
-  styleUrls: ['./magic.component.scss']
+  styleUrls: ['./magic.component.scss', './../rules.component.scss']
 })
 export class MagicComponent implements OnInit {
 
