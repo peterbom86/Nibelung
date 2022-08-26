@@ -15,6 +15,7 @@ This document describes each of the different design philosophies that goes into
 - Gains extra points for destroying enemy units
 - Magic focus on debuffing enemy
 - Their backbone units is reliant on necromancers, if these are taken out, the frontline of units can crumble
+- A theme of self-harm in order to gain benefits, could be reducing the HP of your encampment for some benefit - or killing or reducing HP on own units for a benefit.
 
 ### Despoilers (Red)
 - Merciless, does not care about the life or death of their own units, sometimes even prefer death
