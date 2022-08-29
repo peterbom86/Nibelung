@@ -20,6 +20,7 @@ import { FlankingComponent } from './components/rules/other-concepts/flanking/fl
 import { LegendaryHeroesComponent } from './components/rules/other-concepts/legendary-heroes/legendary-heroes.component';
 import { OtherConceptsComponent } from './components/rules/other-concepts/other-concepts.component';
 import { PushesComponent } from './components/rules/other-concepts/pushes/pushes.component';
+import { PlayingTheGameComponent } from './components/rules/playing-the-game/playing-the-game.component';
 import { RoundDescriptionComponent } from './components/rules/round-description/round-description.component';
 import { RulesComponent } from './components/rules/rules.component';
 import { ExampleScenarioComponent } from './components/rules/scenarios/example-scenario/example-scenario.component';
@@ -64,6 +65,7 @@ const routes: Routes = [
   { path: 'rules/victoryConditions', component: ScenarioVictoryConditionsComponent },
   { path: 'rules/terrain', component: TerrainComponent },
   { path: 'rules/unitProfile', component: UnitProfileComponent },
+  { path: 'rules/playingTheGame', component: PlayingTheGameComponent },
 ];
 
 @NgModule({
