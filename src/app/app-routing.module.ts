@@ -8,6 +8,8 @@ import { RecruitingComponent } from './components/rules/army-recruitment/recruit
 import { UpkeepComponent } from './components/rules/army-recruitment/upkeep/upkeep.component';
 import { DiceProfileComponent } from './components/rules/dice-profile/dice-profile.component';
 import { FactionsComponent } from './components/rules/factions/factions.component';
+import { GameOverviewComponent } from './components/rules/game-overview/game-overview.component';
+import { IntroductionComponent } from './components/rules/introduction/introduction.component';
 import { CastingSpellsComponent } from './components/rules/magic/casting-spells/casting-spells.component';
 import { CounteringSpellsComponent } from './components/rules/magic/countering-spells/countering-spells.component';
 import { MagicComponent } from './components/rules/magic/magic.component';
@@ -66,6 +68,8 @@ const routes: Routes = [
   { path: 'rules/terrain', component: TerrainComponent },
   { path: 'rules/unitProfile', component: UnitProfileComponent },
   { path: 'rules/playingTheGame', component: PlayingTheGameComponent },
+  { path: 'rules/introduction', component: IntroductionComponent },
+  { path: 'rules/gameOverview', component: GameOverviewComponent },
 ];
 
 @NgModule({

@@ -41,6 +41,9 @@ import { ScenarioVictoryConditionsComponent } from './components/rules/scenarios
 import { ExampleScenarioComponent } from './components/rules/scenarios/example-scenario/example-scenario.component';
 import { FactionsComponent } from './components/rules/factions/factions.component';
 import { PlayingTheGameComponent } from './components/rules/playing-the-game/playing-the-game.component';
+import { IntroductionComponent } from './components/rules/introduction/introduction.component';
+import { GameOverviewComponent } from './components/rules/game-overview/game-overview.component';
+import { KeyConceptsComponent } from './components/rules/key-concepts/key-concepts.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +80,10 @@ import { PlayingTheGameComponent } from './components/rules/playing-the-game/pla
     ScenarioVictoryConditionsComponent,
     ExampleScenarioComponent,
     FactionsComponent,
-    PlayingTheGameComponent
+    PlayingTheGameComponent,
+    IntroductionComponent,
+    GameOverviewComponent,
+    KeyConceptsComponent
   ],
   imports: [
     BrowserModule,

@@ -57,3 +57,10 @@ td {
   padding-bottom: .5rem;
   padding-top: .5rem;
 }
+
+.logo {
+  position: fixed;
+  opacity: .1;
+  height: 100vh;
+  pointer-events: none;
+}
