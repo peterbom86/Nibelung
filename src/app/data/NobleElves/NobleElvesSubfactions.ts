@@ -1,11 +1,12 @@
-import { SubFactionFeat, SubfactionSpecialRule } from "src/app/components/faction/subfaction/subfaction";
+import { Subfaction, SubFactionFeat, SubfactionSpecialRule } from "src/app/components/faction/subfaction/subfaction";
 
-export class NobleElvesSubfactions {
+export class NobleElvesSubfactions implements Subfaction {
   constructor(
     public id: string,
     public name: string,
     public imageUrl: string,
     public startingUnits: String,
+    public startingReqPoints: number,
     public unitLimitationRules: string[],
     public specialRules: SubfactionSpecialRule[],
     public feats: SubFactionFeat[]
@@ -17,6 +18,7 @@ export const HORSELORDS = new NobleElvesSubfactions(
   "The Horse Lords of Riverdale",
   "",
   "1x Silver Helms, 2x Ellyrian Reavers, 1x Tiranoc Chariot",
+  3,
   ["Can field 4 of each mounted unit.", "Can field only 1 of each infantry unit"],
   [
     {
@@ -41,7 +43,8 @@ export const SHINING_COMPANY = new NobleElvesSubfactions(
   "2", // Id
   "The Shining Company", // Name
   "", // Image URL
-  "4x Spearmen", // Starting Units
+  "3x Spearmen, 1x Fireborn Mage", // Starting Units
+  3,
   [ // Unit Limitation Rules
     "Cannot recruit any Swordmaster, White Lion, Ellyrian Reaver or Dragonlord units.",
     "Can field 6 Spearmen units"],
@@ -56,7 +59,7 @@ export const SHINING_COMPANY = new NobleElvesSubfactions(
     },
     {
       name: "City Watch",
-      description: "Recruiting spearmen units costs -1 CP."
+      description: "Recruiting Spearmen units costs -1 Req. point"
     }
   ],
   [ // Feats

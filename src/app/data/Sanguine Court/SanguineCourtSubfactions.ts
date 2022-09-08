@@ -1,11 +1,12 @@
-import { SubFactionFeat, SubfactionSpecialRule } from "src/app/components/faction/subfaction/subfaction";
+import { Subfaction, SubFactionFeat, SubfactionSpecialRule } from "src/app/components/faction/subfaction/subfaction";
 
-export class SanguineCourtSubfaction {
+export class SanguineCourtSubfaction implements Subfaction {
   constructor(
     public id: string,
     public name: string,
     public imageUrl: string,
     public startingUnits: String,
+    public startingReqPoints: number,
     public unitLimitationRules: string[],
     public specialRules: SubfactionSpecialRule[],
     public feats: SubFactionFeat[]
@@ -17,6 +18,7 @@ export const BLOODBORN = new SanguineCourtSubfaction(
   "Bloodborn", // Name
   "", // Image URL
   "", // Starting Units
+  3,
   // Unit Limitation Rules
   [
     "This army can only field one of each unit with the 'Raised' keyword.",
@@ -49,9 +51,11 @@ export const LIVING_DEAD = new SanguineCourtSubfaction(
   "SC2", // Id
   "The Living Dead", // Name
   "", // Image URL
-  "3x Restless Dead", // Starting Units
+  "3x Restless Dead, 2x Necromancer", // Starting Units
+  3,
   [ // Unit Limitation Rules
     "This army can only field one of each unit with the 'Vampire' keyword.",
+    "This army can field a total of 6 Restless Dead units"
   ],
   [ // Special Rules
     {
@@ -66,7 +70,7 @@ export const LIVING_DEAD = new SanguineCourtSubfaction(
   [ // Feats
     {
       name: "Howl from Beyond",
-      description: `Summon 3 'Raised' units without spending Mana Points, these summons cannot be dispelled`,
+      description: `Summon 3 'Raised' units as if casting the 'Raise Dead' spell, without spending Mana Points, these cannot be dispelled`,
       cost: "1 CP"
     }
   ]
@@ -77,6 +81,7 @@ export const Nightstalkers = new SanguineCourtSubfaction(
   "Nightstalkers", // Name
   "", // Image URL
   "3x Wailing Ghouls", // Starting Units
+  3,
   [ // Unit Limitation Rules
     "This army can only field one of each unit with the 'Raised' keyword.",
   ],

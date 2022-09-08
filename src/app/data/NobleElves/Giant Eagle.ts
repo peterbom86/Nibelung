@@ -40,7 +40,8 @@ export class GiantEagle implements Unit {
       },
       {
         name: 'Magical transference',
-        description: 'Friendly mages can use this unit as the point of origins of spells by spending one additional mana point to cast the spell.'
+        description: `Friendly mages can use this unit as the point of origin for spells by spending one additional mana point to cast the spell.
+         This unit counts as a mage for dispelling purposes.`
       }
     ];
 
