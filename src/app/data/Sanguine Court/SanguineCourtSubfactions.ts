@@ -55,7 +55,7 @@ export const LIVING_DEAD = new SanguineCourtSubfaction(
   3,
   [ // Unit Limitation Rules
     "This army can only field one of each unit with the 'Vampire' keyword.",
-    "This army can field a total of 6 Restless Dead units"
+    "This army can field a total of 4  Restless Dead units"
   ],
   [ // Special Rules
     {

@@ -1,6 +1,9 @@
 import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObjective, PassiveAbility, PassiveLevelingAbility, Spell, Unit } from "src/app/components/unit/unit";
 
 /// Designers notes
+/// Flanking unit that's really good at dealing damage.
+/// Is not nearly as well-protected as the Blood Knights, but have an innate strong protection from ranged attacks
+/// Has a special ability preventing enemies from healing
 
 export class WerewolfPack implements Unit {
   constructor() {
@@ -29,6 +32,10 @@ export class WerewolfPack implements Unit {
     ];
 
     this.passiveAbilities = [
+      {
+        name: 'Stalks in the Shadows',
+        description: `The unit cannot be targeted by ranged attacks from more than 5" away.`
+      }
     ];
 
     this.activeLevelingAbilities = [

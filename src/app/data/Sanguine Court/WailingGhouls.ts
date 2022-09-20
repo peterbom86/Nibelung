@@ -1,7 +1,9 @@
 import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObjective, PassiveAbility, PassiveLevelingAbility, Spell, Unit } from "src/app/components/unit/unit";
 
 /// Designers notes
-/// This unit is a fast and cheap unit, but it is not very strong. It has some good scenario play since it has multiple ways of scoring VPs.
+/// This unit is a fast and cheap unit, but it is not very strong.
+/// It has some good scenario play since it has multiple ways of scoring VPs.
+/// It can also be used to disrupt enemy units and resources with its passive abilties
 
 export class WailingGhouls implements Unit {
   constructor() {
@@ -14,7 +16,7 @@ export class WailingGhouls implements Unit {
       defense: '2/3/1',
       resilience: '0',
       hp: '10',
-      cost: '1 req.',
+      cost: '2 req.',
       base: '50mm'
     };
 

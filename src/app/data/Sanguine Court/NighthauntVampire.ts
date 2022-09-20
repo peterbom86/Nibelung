@@ -1,7 +1,7 @@
 import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObjective, PassiveAbility, PassiveLevelingAbility, Spell, Unit } from "src/app/components/unit/unit";
 
 /// Designers notes
-// The elite cavalry of the Sanguine Court.
+//
 
 export class NighthauntVampire implements Unit {
   constructor() {

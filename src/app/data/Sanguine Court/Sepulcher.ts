@@ -2,7 +2,7 @@ import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObj
 
 /// Designers notes
 // The Sanguine court headquarters.
-//
+// Can spend it HP to gain certain bonusses
 
 export class Sepulcher implements Unit {
   constructor() {
@@ -20,6 +20,15 @@ export class Sepulcher implements Unit {
     };
 
     this.activeAbilities = [
+      {
+        name: 'Unholy Vigor',
+        cost: '5 HP',
+        costCanBePaidWithSymbol: false,
+        range: 'Self',
+        oncePerTurn: true,
+        description: `
+           Target friendly unit within 12" may reroll one attack roll.`
+      }
     ];
 
     this.passiveAbilities = [

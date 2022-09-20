@@ -1,6 +1,9 @@
 import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObjective, PassiveAbility, PassiveLevelingAbility, Spell, Unit } from "src/app/components/unit/unit";
 
-// TODO: not entered yet
+/// The Anti-air of the Noble Elves
+/// Has a strong secondary role in monster hunting since NE characters are not particulary strong in combat
+/// and monsters often are good against units which usually solves NE problems
+
 export class BoltThrower implements Unit {
   constructor() {
     this.id = "5";
