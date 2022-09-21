@@ -21,7 +21,16 @@ export class WailingGhouls implements Unit {
     };
 
     this.activeAbilities = [
-
+      {
+        name: 'Flesh Eaters',
+        cost: '1 CMD',
+        costCanBePaidWithSymbol: false,
+        range: 'Self',
+        oncePerTurn: true,
+        description: `After destroying an enemy unit,
+         if this unit is no longer engaged it can use this ability instead of being activated normally the following turn.
+         This unit gains -1/-1/-1 defence and scores 1 VP`
+      }
     ];
 
     this.passiveAbilities = [
@@ -38,7 +47,14 @@ export class WailingGhouls implements Unit {
     this.activeLevelingAbilities = [
     ];
 
-    this.passiveLevelingAbilities = [];
+    this.passiveLevelingAbilities = [
+      {
+        name: 'Pestilence',
+        experienceCost: '3 xp',
+        description: `When this unit is destroyed, all enemy units within 2" suffer 4 dmg.
+        \n If this unit end a turn engaging the enemy encampment, the encampment gains a pestilence token. At the start of every turn,
+         an encampment takes 3 dmg per pestilence token currently on it.`
+      }];
 
     this.attacks = [
       {
@@ -62,11 +78,6 @@ export class WailingGhouls implements Unit {
       }];
 
     this.objectives = [
-      {
-        name: 'Flesh Eaters',
-        description: `Whenever this unit destroys an enemy unit, it gains 1 VP.`,
-        reward: `1 VP`
-      },
       {
         name: 'Grave Robbers',
         description: `Whenever this unit controls a Grave Marker on the opponents half of the map, score 1 additional VP.`,

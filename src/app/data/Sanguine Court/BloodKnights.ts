@@ -13,7 +13,7 @@ export class BloodKnights implements Unit {
     this.baseStats = {
       movement: '7" / 10"',
       defense: '3/3/4',
-      resilience: '3',
+      resilience: '2',
       hp: '15',
       cost: '5 req.',
       base: '60mm'
@@ -29,7 +29,8 @@ export class BloodKnights implements Unit {
       },
       {
         name: 'Lifelink',
-        description: `For every three points of damage dealt by this unit in a single attack, your encampment gains 1 HP`
+        description: `For every two points of damage dealt by this unit in each combat round (after subtracting resilience),
+         choose one: your encampment gains 1 HP or this unit heals 1 HP. \n This can increase the encampments HP beyond its starting point.`
       }
     ];
 
@@ -53,14 +54,14 @@ export class BloodKnights implements Unit {
             hits1: '4 dmg',
             hits2: '5 dmg',
             hits3: '6 dmg',
-            hits4: '9 dmg'
+            hits4: '8 dmg'
           }]
       }];
 
     this.objectives = [
       {
-        name: 'Bloodied Axe',
-        description: `Whenever this unit destroys an enemy unit with the 'Lone figure' rule, it's controller gains the reward`,
+        name: 'Blood Harvest',
+        description: `Whenever an enemy unit engaged by this unit is destroyed, gain 1 extra VP.`,
         reward: '1 VP'
       },
     ];
