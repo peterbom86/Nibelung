@@ -10,6 +10,7 @@ export interface Unit {
   passiveLevelingAbilities: PassiveLevelingAbility[];
   attacks: Attack[];
   objectives: BattlefieldObjective[];
+  fieldAllowance: number;
 }
 
 export interface BaseStats {

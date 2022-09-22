@@ -20,6 +20,8 @@ export class WerewolfPack implements Unit {
       base: '50mm'
     };
 
+    this.fieldAllowance = 2;
+
     this.activeAbilities = [
       {
         name: 'Terrorizing Howl',
@@ -82,4 +84,5 @@ export class WerewolfPack implements Unit {
   attacks: Attack[];
   objectives: BattlefieldObjective[];
   spells: Spell[];
+  fieldAllowance: number;
 }

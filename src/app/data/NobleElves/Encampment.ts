@@ -18,6 +18,8 @@ export class Encampment implements Unit {
       base: '50mm'
     };
 
+    this.fieldAllowance = 1;
+
     this.activeAbilities = [
     ];
 
@@ -56,4 +58,5 @@ export class Encampment implements Unit {
   attacks: Attack[];
   objectives: BattlefieldObjective[];
   spells: Spell[];
+  fieldAllowance: number;
 }

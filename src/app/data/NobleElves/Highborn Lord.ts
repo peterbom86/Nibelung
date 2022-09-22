@@ -15,6 +15,8 @@ export class HighBornLord implements Unit {
       base: '25mm'
     };
 
+    this.fieldAllowance = 1;
+
     this.passiveAbilities = [
       {
         name: 'Lone figure',
@@ -92,4 +94,5 @@ export class HighBornLord implements Unit {
   attacks: Attack[];
   objectives: BattlefieldObjective[];
   spells: Spell[];
+  fieldAllowance: number;
 }

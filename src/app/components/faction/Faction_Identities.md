@@ -34,10 +34,13 @@ This document describes each of the different design philosophies that goes into
 
 ### Wood Elves (Green)
 - Controlling terrain
-- Caring less about traditional objectives
+- Caring less about traditional objectives (enemies might not even get full points?)
 - Hit and Run tactics
 - Powerful units and heroes
 - Can have trouble holding ground
+- Wants to delay the game by using hit'n'run tactics during the early and mid-game, then using their ramped resources to recruit massive forest creatures to
+  stomp the enemy in the late game,
+- Quite bad at assasinating the enemy encampment, except maybe very late game where they can run rampant.
  
 # Magic identities of each of the factions
 
@@ -71,12 +74,14 @@ This document describes each of the different design philosophies that goes into
 
 ## Green
 Ramping of resources (extra Req. Points)
+hit-n-run
 
 ### Ally colors spells
 - Spells that deal direct damage, but based around the units you have on the table, they are somehow needed to deal the damage.
 
 ## Red
 - Direct damage spells
+
 
 ### Enemy color ability
 - Spell for generating MP by sacrificing CP (opposite of blue tactical options)

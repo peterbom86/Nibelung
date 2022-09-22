@@ -15,6 +15,8 @@ export class NightGoblins implements Unit {
       base: '50mm'
     };
 
+    this.fieldAllowance = 0;
+
     this.activeAbilities = [
       {
         name: 'Net entaglement',
@@ -77,4 +79,5 @@ export class NightGoblins implements Unit {
   attacks: Attack[];
   objectives: BattlefieldObjective[];
   spells: Spell[];
+  fieldAllowance: number;
 }

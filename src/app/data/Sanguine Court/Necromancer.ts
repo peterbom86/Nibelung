@@ -15,6 +15,8 @@ export class Necromancer implements Unit {
       base: '25mm'
     };
 
+    this.fieldAllowance = 2;
+
     this.passiveAbilities = [
       {
         name: 'Lone figure',
@@ -116,4 +118,5 @@ export class Necromancer implements Unit {
   attacks: Attack[];
   objectives: BattlefieldObjective[];
   spells: Spell[];
+  fieldAllowance: number;
 }

@@ -15,6 +15,8 @@ export class Spearmen implements Unit {
       base: '50mm'
     };
 
+    this.fieldAllowance = 3;
+
     this.activeAbilities = [
       {
         name: 'Glimmering Shields',
@@ -92,4 +94,5 @@ export class Spearmen implements Unit {
   attacks: Attack[];
   objectives: BattlefieldObjective[];
   spells: Spell[];
+  fieldAllowance: number;
 }

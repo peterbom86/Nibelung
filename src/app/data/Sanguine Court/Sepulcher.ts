@@ -19,6 +19,8 @@ export class Sepulcher implements Unit {
       base: '50mm'
     };
 
+    this.fieldAllowance = 1;
+
     this.activeAbilities = [
       {
         name: 'Unholy Vigor',
@@ -59,4 +61,5 @@ export class Sepulcher implements Unit {
   attacks: Attack[];
   objectives: BattlefieldObjective[];
   spells: Spell[];
+  fieldAllowance: number;
 }

@@ -15,6 +15,8 @@ export class TheRestless implements Unit {
       base: '50mm'
     };
 
+    this.fieldAllowance = 3;
+
     this.activeAbilities = [
     ];
 
@@ -73,4 +75,5 @@ export class TheRestless implements Unit {
   attacks: Attack[];
   objectives: BattlefieldObjective[];
   spells: Spell[];
+  fieldAllowance: number;
 }

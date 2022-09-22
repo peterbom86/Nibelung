@@ -1,24 +1,28 @@
 import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObjective, PassiveAbility, PassiveLevelingAbility, Spell, Unit } from "src/app/components/unit/unit";
 
 /// Designers notes
-//
+/// Control and damage over time (borrowed from red and blue)
+/// offensive spells in contrast to the defensive and supportive necromancers
+/// Direct removal since this is blacks key ability
+/// Ability to sacrifice self for powerful effect
+/// Drain life-like ability
 
-export class NighthauntVampire implements Unit {
+export class DeathMage implements Unit {
   constructor() {
-    this.id = "SC6";
-    this.name = "Nighthaunt Vampire";
+    this.id = "SC8";
+    this.name = "Death Mage";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
 
     this.baseStats = {
-      movement: '7" / 10"',
-      defense: '4/3/3',
-      resilience: '1',
+      movement: '4" / 7"',
+      defense: '1/1/3',
+      resilience: '0',
       hp: '10',
       cost: '4 req.',
       base: '30mm'
     };
 
-    this.fieldAllowance = 1;
+    this.fieldAllowance = 2;
 
     this.activeAbilities = [
       {

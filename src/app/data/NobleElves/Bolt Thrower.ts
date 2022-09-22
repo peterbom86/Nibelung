@@ -19,6 +19,8 @@ export class BoltThrower implements Unit {
       base: '40mm'
     };
 
+    this.fieldAllowance = 2;
+
     this.activeAbilities = [];
 
     this.passiveAbilities = [
@@ -82,4 +84,5 @@ export class BoltThrower implements Unit {
   attacks: Attack[];
   objectives: BattlefieldObjective[];
   spells: Spell[];
+  fieldAllowance: number;
 }

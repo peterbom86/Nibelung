@@ -1,12 +1,20 @@
 import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObjective, PassiveAbility, PassiveLevelingAbility, Spell, Unit } from "src/app/components/unit/unit";
 
 /// Designers notes
-//
+/// Necromancer with powerful aura that powers up all nearby risen units, gets stronger for each turn, but also more costly.
+/// Aura must be maintained for an cumulative mana cost, 2 MP first turn, then 4, 7, 9. In order to reset it back down,
+/// one turn must be spend to remove a 'cumulative' counter, so if it's at 7, 3 turns must pass to get it back to 2 MP.
+/// Effects gained is:
+/// +1/+0,
+/// +2 dmg
+/// +1 attack
+/// +0/+2
 
-export class NighthauntVampire implements Unit {
+
+export class LordOfTheDead implements Unit {
   constructor() {
-    this.id = "SC6";
-    this.name = "Nighthaunt Vampire";
+    this.id = "SC9";
+    this.name = "Lord of The Dead";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
 
     this.baseStats = {

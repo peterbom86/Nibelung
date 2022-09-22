@@ -15,6 +15,8 @@ export class GiantEagle implements Unit {
       base: '40mm'
     };
 
+    this.fieldAllowance = 3;
+
     this.activeAbilities = [
       {
         name: 'Roam the Skies',
@@ -85,4 +87,5 @@ export class GiantEagle implements Unit {
   attacks: Attack[];
   objectives: BattlefieldObjective[];
   spells: Spell[];
+  fieldAllowance: number;
 }

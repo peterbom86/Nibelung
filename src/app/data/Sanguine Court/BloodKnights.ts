@@ -19,6 +19,8 @@ export class BloodKnights implements Unit {
       base: '60mm'
     };
 
+    this.fieldAllowance = 2;
+
     this.activeAbilities = [
     ];
 
@@ -80,4 +82,5 @@ export class BloodKnights implements Unit {
   attacks: Attack[];
   objectives: BattlefieldObjective[];
   spells: Spell[];
+  fieldAllowance: number;
 }
