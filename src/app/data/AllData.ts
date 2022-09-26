@@ -12,6 +12,7 @@ import { NobleElvesFaction } from "./NobleElves/nobleElvesFaction";
 import { HORSELORDS, SHINING_COMPANY } from "./NobleElves/NobleElvesSubfactions";
 import { Spearmen } from "./NobleElves/Spearmen";
 import { BloodKnights } from "./Sanguine Court/BloodKnights";
+import { DeathMage } from "./Sanguine Court/DeathMage";
 import { Necromancer } from "./Sanguine Court/Necromancer";
 import { NighthauntVampire } from "./Sanguine Court/NighthauntVampire";
 import { SanguineCourtFaction } from "./Sanguine Court/SanguineCourtFaction";
@@ -37,7 +38,8 @@ export const UNITS: Unit[] =
   new NighthauntVampire(),
   new Sepulcher(),
   new Encampment(),
-  new NightGoblins()
+  new NightGoblins(),
+  new DeathMage()
 ]
 
 export const FACTIONS: Faction[] =

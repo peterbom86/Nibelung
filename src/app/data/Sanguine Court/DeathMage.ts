@@ -17,32 +17,29 @@ export class DeathMage implements Unit {
       movement: '4" / 7"',
       defense: '1/1/3',
       resilience: '0',
-      hp: '10',
+      hp: '5',
       cost: '4 req.',
-      base: '30mm'
+      base: '25mm'
     };
 
     this.fieldAllowance = 2;
 
     this.activeAbilities = [
-      {
-        name: 'Roam the Skies',
-        cost: '1 CP',
-        costCanBePaidWithSymbol: false,
-        range: 'Self',
-        oncePerTurn: true,
-        description: `When issuing this order, the unit gains the “Roaming the skies” status effect. This unit can remove the status effect at any time during its activation.
-           When this unit performs a charge against a unit not affected by “Roaming the skies”, the status effect ends.
-           \n While affected by “Roam the Skies” a unit cannot be targeted by melee attacks or charged by non-flying models.
-           Enemy models targeting a model affected by this suffer -1/-1 and -6" range to their ranged attacks. A model affected by this cannot contest objectives or seize resources.`
-      }
+      // {
+      //   name: '',
+      //   cost: '1 CP',
+      //   costCanBePaidWithSymbol: false,
+      //   range: '',
+      //   oncePerTurn: true,
+      //   description: ``
+      // }
     ];
 
     this.passiveAbilities = [
-      {
-        name: 'Vampire',
-        description: `This unit has the 'Vampire' keyword.`
-      },
+      // {
+      //   name: '',
+      //   description: ``
+      // },
       {
         name: 'Lone figure',
         description: 'This unit cannot be targeted by ranged attacks from more than 5” away'
@@ -50,50 +47,93 @@ export class DeathMage implements Unit {
     ];
 
     this.activeLevelingAbilities = [
+      // {
+      //   name: '',
+      //   cost: ' CP',
+      //   costCanBePaidWithSymbol: false,
+      //   range: '',
+      //   oncePerTurn: true,
+      //   description: '',
+      //   experienceCost: 'xp'
+      // }
     ];
 
-    this.passiveLevelingAbilities = [];
+    this.passiveLevelingAbilities = [
+      {
+        name: 'Hells caretaker',
+        experienceCost: '5 xp',
+        description: 'Gains the spell Back to the Abyss for one cast per turn'
+      }
+    ];
 
     this.attacks = [
       {
-        name: 'Bloodied Axe',
-        range: 'Melee',
-        dice: '5/4',
-        attacks: '2',
-        rend: '1',
-        chargeBonus: ['+1/+1'],
-        flankBonus: ['+1/+1'],
+        name: 'Spells',
+        range: '*',
+        dice: '4/2',
+        attacks: '*',
+        rend: '*',
+        chargeBonus: [''],
+        flankBonus: [''],
         damageTracks: [
           {
-            hits1: '4 dmg',
-            hits2: '5 dmg',
-            hits3: '6 dmg',
-            hits4: '8 dmg'
+            hits1: 'Spell effect',
+            hits2: 'Spell effect + 2 dmg',
+            hits3: '',
+            hits4: 'Spell effect + regain 1 MP',
+          }]
+      },
+      {
+        name: 'Siphon Life',
+        range: '8"/Magic',
+        dice: '3/2',
+        attacks: '2',
+        rend: '0',
+        chargeBonus: [''],
+        flankBonus: [''],
+        damageTracks: [
+          {
+            hits1: '2 dmg',
+            hits2: '3 dmg + heal friendly unit within 6" for damage dealt',
+            hits3: '5 dmg',
+            hits4: '7 dmg  + heal friendly unit within 6" for damage dealt',
+            hits5: '9 dmg'
           }]
       }];
 
     this.objectives = [
       {
-        name: 'Bloodied Axe',
-        description: `Whenever this unit destroys an enemy unit with the 'Lone figure' rule, it's controller gains the reward`,
-        reward: '1 VP'
-      },
-      {
-        name: 'Ancient Blood',
-        description: `If this model is destroyed, the opposing player gains the reward`,
+        name: 'The Withering',
+        description: `Whenever an enemy unit is destroyed while affected by Curse of Ages, gain 1 VP.`,
         reward: '1 VP'
       }
     ];
 
     this.spells = [
       {
-        name: 'Swarm of bats',
-        cost: '2 MP',
+        name: 'Essence Drain',
+        cost: '3 MP',
         costCanBePaidWithSymbol: false,
-        range: 'self',
+        range: '8"',
+        timesPerTurn: '2',
+        description: `Target enemy unit suffers 5 dmg. A friendly unit within 6" can be healed for the amount dealt after subtracting resilience.`
+      },
+      {
+        name: 'Curse of Ages',
+        cost: '3 MP',
+        costCanBePaidWithSymbol: false,
+        range: '6"',
         timesPerTurn: '1',
-        description: `The vampire turns himself into a swarm of bats, place this model anywhere outside combat within 12", then its activation immediately ends.
-         For the rest of this turn, this model cannot attack and cannot be targeted by attacks`
+        description: `Target enemy unit gains a Curse of Ages token. A unit having a Curse of Ages token at the end of a turn suffers 3 dmg.
+        \n If the unit is healed by any source, the heal is ignored, but the curse will be removed.`
+      },
+      {
+        name: 'Back to the Abyss',
+        cost: '6 MP',
+        costCanBePaidWithSymbol: false,
+        range: '6", cannot be channeled',
+        timesPerTurn: '*',
+        description: `On a successful hit, target enemy unit and this unit is removed from the game.`
       },
     ];
   }
