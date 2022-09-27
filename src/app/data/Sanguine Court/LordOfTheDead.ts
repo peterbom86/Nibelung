@@ -3,7 +3,7 @@ import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObj
 /// Designers notes
 /// Necromancer with powerful aura that powers up all nearby risen units, gets stronger for each turn, but also more costly.
 /// Aura must be maintained for an cumulative mana cost, 2 MP first turn, then 4, 7, 9. In order to reset it back down,
-/// one turn must be spend to remove a 'cumulative' counter, so if it's at 7, 3 turns must pass to get it back to 2 MP.
+/// one turn must be spend to remove a 'cumulative' counter, so if it's at 9, 3 turns must pass to get it back to 2 MP.
 /// Effects gained is:
 /// +1/+0,
 /// +2 dmg
@@ -29,24 +29,21 @@ export class LordOfTheDead implements Unit {
     this.fieldAllowance = 1;
 
     this.activeAbilities = [
-      {
-        name: 'Roam the Skies',
-        cost: '1 CP',
-        costCanBePaidWithSymbol: false,
-        range: 'Self',
-        oncePerTurn: true,
-        description: `When issuing this order, the unit gains the “Roaming the skies” status effect. This unit can remove the status effect at any time during its activation.
-           When this unit performs a charge against a unit not affected by “Roaming the skies”, the status effect ends.
-           \n While affected by “Roam the Skies” a unit cannot be targeted by melee attacks or charged by non-flying models.
-           Enemy models targeting a model affected by this suffer -1/-1 and -6" range to their ranged attacks. A model affected by this cannot contest objectives or seize resources.`
-      }
+      // {
+      //   name: '',
+      //   cost: '1 CP',
+      //   costCanBePaidWithSymbol: false,
+      //   range: '',
+      //   oncePerTurn: true,
+      //   description: ``
+      // }
     ];
 
     this.passiveAbilities = [
-      {
-        name: 'Vampire',
-        description: `This unit has the 'Vampire' keyword.`
-      },
+      // {
+      //   name: '',
+      //   description: ``
+      // },
       {
         name: 'Lone figure',
         description: 'This unit cannot be targeted by ranged attacks from more than 5” away'
@@ -54,50 +51,77 @@ export class LordOfTheDead implements Unit {
     ];
 
     this.activeLevelingAbilities = [
+      // {
+      //   name: '',
+      //   cost: ' CP',
+      //   costCanBePaidWithSymbol: false,
+      //   range: '',
+      //   oncePerTurn: true,
+      //   description: '',
+      //   experienceCost: 'xp'
+      // }
     ];
 
-    this.passiveLevelingAbilities = [];
+    this.passiveLevelingAbilities = [
+      // {
+      //   name: 'Hells caretaker',
+      //   experienceCost: '5 xp',
+      //   description: 'Gains the spell Back to the Abyss for one cast per turn'
+      // }
+    ];
 
     this.attacks = [
-      {
-        name: 'Bloodied Axe',
-        range: 'Melee',
-        dice: '5/4',
-        attacks: '2',
-        rend: '1',
-        chargeBonus: ['+1/+1'],
-        flankBonus: ['+1/+1'],
-        damageTracks: [
-          {
-            hits1: '4 dmg',
-            hits2: '5 dmg',
-            hits3: '6 dmg',
-            hits4: '8 dmg'
-          }]
-      }];
+      // {
+      //   name: 'Spells',
+      //   range: '*',
+      //   dice: '4/2',
+      //   attacks: '*',
+      //   rend: '*',
+      //   chargeBonus: [''],
+      //   flankBonus: [''],
+      //   damageTracks: [
+      //     {
+      //       hits1: 'Spell effect',
+      //       hits2: 'Spell effect + 2 dmg',
+      //       hits3: '',
+      //       hits4: 'Spell effect + regain 1 MP',
+      //     }]
+      // },
+      // {
+      //   name: 'Siphon Life',
+      //   range: '8"/Magic',
+      //   dice: '3/2',
+      //   attacks: '2',
+      //   rend: '0',
+      //   chargeBonus: [''],
+      //   flankBonus: [''],
+      //   damageTracks: [
+      //     {
+      //       hits1: '2 dmg',
+      //       hits2: '3 dmg + heal friendly unit within 6" for damage dealt',
+      //       hits3: '5 dmg',
+      //       hits4: '7 dmg  + heal friendly unit within 6" for damage dealt',
+      //       hits5: '9 dmg'
+      //     }]
+      // }
+    ];
 
     this.objectives = [
-      {
-        name: 'Bloodied Axe',
-        description: `Whenever this unit destroys an enemy unit with the 'Lone figure' rule, it's controller gains the reward`,
-        reward: '1 VP'
-      },
-      {
-        name: 'Ancient Blood',
-        description: `If this model is destroyed, the opposing player gains the reward`,
-        reward: '1 VP'
-      }
+      // {
+      //   name: 'The Withering',
+      //   description: `Whenever an enemy unit is destroyed while affected by Curse of Ages, gain 1 VP.`,
+      //   reward: '1 VP'
+      // }
     ];
 
     this.spells = [
       {
-        name: 'Swarm of bats',
-        cost: '2 MP',
+        name: '',
+        cost: 'MP',
         costCanBePaidWithSymbol: false,
         range: 'self',
         timesPerTurn: '1',
-        description: `The vampire turns himself into a swarm of bats, place this model anywhere outside combat within 12", then its activation immediately ends.
-         For the rest of this turn, this model cannot attack and cannot be targeted by attacks`
+        description: ``
       },
     ];
   }

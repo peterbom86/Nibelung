@@ -23,10 +23,6 @@ export class NobleElvesFaction implements Faction {
         description: "Every unit counts as having a wizard for dispelling of spells."
       },
       {
-        name: "Force Organization",
-        description: "Every unit counts as an officer for command purposes."
-      },
-      {
         name: "Coordinated Attack",
         description: "When issuing a command, you may issue another command before the opponent gets to issue a command."
       }

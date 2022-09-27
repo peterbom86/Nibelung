@@ -7,7 +7,9 @@ import { BoltThrower } from "./NobleElves/Bolt Thrower";
 import { Encampment } from "./NobleElves/Encampment";
 import { FireBornMage } from "./NobleElves/FireBornMage";
 import { GiantEagle } from "./NobleElves/Giant Eagle";
+import { HalthirTheDragonLord } from "./NobleElves/HalthirTheDragonLord";
 import { HighBornLord } from "./NobleElves/Highborn Lord";
+import { IthilChariot } from "./NobleElves/IthilChariot";
 import { NobleElvesFaction } from "./NobleElves/nobleElvesFaction";
 import { HORSELORDS, SHINING_COMPANY } from "./NobleElves/NobleElvesSubfactions";
 import { Spearmen } from "./NobleElves/Spearmen";
@@ -39,7 +41,10 @@ export const UNITS: Unit[] =
   new Sepulcher(),
   new Encampment(),
   new NightGoblins(),
-  new DeathMage()
+  new DeathMage(),
+  new IthilChariot(),
+  new HalthirTheDragonLord()
+  // new LordOfTheDead()
 ]
 
 export const FACTIONS: Faction[] =
