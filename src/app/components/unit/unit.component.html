@@ -7,7 +7,7 @@
 
   <div fxLayout="row wrap">
 
-    <div fxFlex="50">
+    <div fxFlex="50" fxFlex.xs="100">
       <!-- Unit Name -->
       <div class="stat-block">
         <div class="unit-name">
@@ -113,7 +113,7 @@
             <tr class="ability">
               <td class="ability-name">{{ objective.name }}</td>
               <td>
-                <span>{{ objective.reward }}</span>
+                {{ objective.reward }}
               </td>
             </tr>
             <tr>
@@ -127,7 +127,7 @@
 
     </div>
 
-    <div fxFlex="50">
+    <div fxFlex="50" fxFlex.xs="100" class="last-block">
       <!-- Unit Abilities -->
       <div class="stat-block" *ngIf="unit.activeAbilities.length > 0">
         <div class="unit-abilities">
@@ -237,7 +237,7 @@
           <tbody *ngFor="let levelingAbility of unit.activeLevelingAbilities">
             <tr class="ability">
               <td class="ability-name">{{ levelingAbility.name }}</td>
-              <td fxLayoutAlign="center center">{{ levelingAbility.cost }}</td>
+              <td>{{ levelingAbility.cost }}</td>
               <td>{{ levelingAbility.range }}</td>
               <td>{{ levelingAbility.oncePerTurn | yesno }}</td>
               <td>{{ levelingAbility.experienceCost }}</td>

@@ -88,7 +88,7 @@ th:not(:last-of-type) {
   text-align: left;
 }
 
-.ability > td {
+.ability>td {
   padding-top: .1rem;
   line-height: 25px;
 }
@@ -107,4 +107,66 @@ td {
 
 .ability-text {
   white-space: pre-line;
+}
+
+@media only screen and (max-width: 600px) {
+  * {
+    font-size: .8rem;
+  }
+
+  .unit-name {
+    font-size: .8rem;
+  }
+
+  .stat-block {
+    margin-top: .6rem;
+    margin-left: .6rem;
+    margin-right: .6rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    padding-top: .2rem;
+    padding-bottom: .1rem;
+    min-width: 93vw;
+  }
+
+  .last-block .stat-block:last-of-type {
+    margin-bottom: .6rem;
+  }
+
+  .stat-block div {
+    font-size: .6rem;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table>tr>th {
+    font-size: .8rem;
+    min-width: 0rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+  }
+
+  table>tr>td>* {
+    font-size: .6rem;
+  }
+
+  table>tr>td {
+    font-size: .6rem;
+  }
+
+  td {
+    font-size: .7rem;
+  }
+
+  .damage-profile {
+    height: 1rem !important;
+  }
+
+  .effect-logo2 {
+    margin-left: 2px;
+    margin-bottom: 2px;
+    width: 15px !important;
+  }
 }
