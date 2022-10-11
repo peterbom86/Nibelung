@@ -29,6 +29,10 @@ export class Encampment implements Unit {
         name: 'Houseguards',
         description: `If an enemy model ends its activation within 6" of this model, immediately put a Houseguard Spearmen units into play in base contact with this model.
           This can only be triggered once per turn and a max of 3 times per game.`
+      },
+      {
+        name: 'Flammable',
+        description: `Against weapons with the Fire damage type, this units resilience is reduced to 1.`
       }
     ];
 

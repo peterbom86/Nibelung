@@ -70,7 +70,7 @@
         <div class="tracks">
           <div *ngFor="let attack of unit.attacks">
 
-            <div class="unit-abilities">
+            <div class="unit-abilities" *ngIf="attack.damageTracks.length > 0">
               {{ attack.name }}
             </div>
             <table>

@@ -46,6 +46,11 @@ export class Archers implements Unit {
         name: 'Aura of Magic Resistance',
         experienceCost: '2 xp',
         description: 'If countering an enemy spell targeting a model within 6” of a model in this unit, lower the countering cost by 1.'
+      },
+      {
+        name: 'Burning Mithril Arrowheads',
+        experienceCost: '3 xp',
+        description: 'This units ranged attacks gain the damage type: Fire'
       }
     ]
 
