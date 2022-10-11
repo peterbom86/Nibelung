@@ -4,7 +4,8 @@ export class IthilChariot implements Unit {
   constructor() {
     this.id = "8";
     this.name = "Ithil Chariot";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/high_elves/chariots.jpg";
+    this.color = "blue";
 
     this.baseStats = {
       movement: '7" / 10"',
@@ -91,4 +92,5 @@ export class IthilChariot implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

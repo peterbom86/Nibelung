@@ -4,7 +4,8 @@ export class Archers implements Unit {
   constructor() {
     this.id = "2";
     this.name = "Noble Elf House Guard Archers";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/high_elves/archers.jpg";
+    this.color = "blue";
 
     this.baseStats = {
       movement: '4" / 7"',
@@ -102,4 +103,5 @@ export class Archers implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

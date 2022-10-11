@@ -10,6 +10,7 @@ export class WailingGhouls implements Unit {
     this.id = "SC3";
     this.name = "Wailing Ghouls";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.color = "black";
 
     this.baseStats = {
       movement: '4" / 7"',
@@ -102,4 +103,5 @@ export class WailingGhouls implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

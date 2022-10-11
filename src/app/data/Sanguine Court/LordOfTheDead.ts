@@ -16,6 +16,7 @@ export class LordOfTheDead implements Unit {
     this.id = "SC9";
     this.name = "Lord of The Dead";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.color = "black";
 
     this.baseStats = {
       movement: '7" / 10"',
@@ -138,4 +139,5 @@ export class LordOfTheDead implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

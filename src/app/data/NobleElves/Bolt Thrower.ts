@@ -8,7 +8,8 @@ export class BoltThrower implements Unit {
   constructor() {
     this.id = "5";
     this.name = "Noble Elf House Guard Archers";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/high_elves/boltthrower.jpg";
+    this.color = "blue";
 
     this.baseStats = {
       movement: '2"',
@@ -85,4 +86,5 @@ export class BoltThrower implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

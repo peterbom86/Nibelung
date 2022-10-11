@@ -10,6 +10,7 @@ export class WerewolfPack implements Unit {
     this.id = "SC4";
     this.name = "Werewolf Pack";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.color = "black";
 
     this.baseStats = {
       movement: '6" / 9"',
@@ -85,4 +86,5 @@ export class WerewolfPack implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

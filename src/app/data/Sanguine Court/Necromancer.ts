@@ -5,6 +5,7 @@ export class Necromancer implements Unit {
     this.id = "SC2";
     this.name = "Necromancer";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.color = "black";
 
     this.baseStats = {
       movement: '3" / 6"',
@@ -119,4 +120,5 @@ export class Necromancer implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

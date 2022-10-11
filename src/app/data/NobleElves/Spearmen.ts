@@ -5,6 +5,7 @@ export class Spearmen implements Unit {
     this.id = "1";
     this.name = "Noble Elf House Guard Spearmen";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.color = "blue";
 
     this.baseStats = {
       movement: '4" / 7"',
@@ -95,4 +96,5 @@ export class Spearmen implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

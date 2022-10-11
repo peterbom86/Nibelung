@@ -5,6 +5,7 @@ export class TheRestless implements Unit {
     this.id = "SC1";
     this.name = "Restless";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.color = "black";
 
     this.baseStats = {
       movement: '3" / 6"',
@@ -76,4 +77,5 @@ export class TheRestless implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

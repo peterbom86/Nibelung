@@ -11,6 +11,7 @@ export interface Unit {
   attacks: Attack[];
   objectives: BattlefieldObjective[];
   fieldAllowance: number;
+  color: string;
 }
 
 export interface BaseStats {

@@ -4,7 +4,8 @@ export class CelethirReavers implements Unit {
   constructor() {
     this.id = "10";
     this.name = "Celethir Reavers";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/high_elves/lightcav.jpg";
+    this.color = "blue";
 
     this.baseStats = {
       movement: '8" / 11"',
@@ -110,4 +111,5 @@ export class CelethirReavers implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

@@ -9,6 +9,7 @@ export class Sepulcher implements Unit {
     this.id = "SC7";
     this.name = "Sepulcher";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.color = "black";
 
     this.baseStats = {
       movement: '0" / 0"',
@@ -62,4 +63,5 @@ export class Sepulcher implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

@@ -5,6 +5,7 @@ export class NightGoblins implements Unit {
     this.id = "N1";
     this.name = "Night Goblins";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.color = "brown";
 
     this.baseStats = {
       movement: '5" / 8"',
@@ -80,4 +81,5 @@ export class NightGoblins implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

@@ -4,7 +4,8 @@ export class HalthirTheDragonLord implements Unit {
   constructor() {
     this.id = "9";
     this.name = "Halthir, The Dragon Lord";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/high_elves/legendary.jpg";
+    this.color = "blue";
 
     this.baseStats = {
       movement: '6" / 10"',
@@ -113,4 +114,5 @@ export class HalthirTheDragonLord implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

@@ -2,12 +2,12 @@
   <div class="bg"></div>
 
   <div fxLayout="row" fxLayoutAlign="center center" class="logo">
-    <img src="{{unit.imageUrl}}" fxFlex.gt-xs="100">
+    <img src="{{unit.imageUrl}}" fxFlex.gt-xs="100" class="{{unit.color}} image">
   </div>
 
-  <div fxLayout="row wrap" fxLayout.xs="column">
+  <div class="content" fxLayout="row wrap" fxLayout.xs="column">
 
-    <div>
+    <div class="{{unit.color}}-light">
       <!-- Unit Name -->
       <div class="stat-block">
         <div class="unit-name">
@@ -127,7 +127,7 @@
 
     </div>
 
-    <div class="last-block">
+    <div class="last-block {{unit.color}}-light">
       <!-- Unit Abilities -->
       <div class="stat-block" *ngIf="unit.activeAbilities.length > 0">
         <div class="unit-abilities">
@@ -276,5 +276,6 @@
         </table>
       </div>
     </div>
+
   </div>
 </div>

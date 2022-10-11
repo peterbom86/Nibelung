@@ -1,7 +1,15 @@
 .logo {
   position: fixed;
-  opacity: .1;
+  opacity: .5;
   height: calc(100vh - 64px);
+}
+
+.image {
+  margin-top: -2rem;
+}
+
+.content > div {
+  z-index: 1
 }
 
 .bg {
@@ -21,7 +29,7 @@
   padding-right: .5rem;
   padding-top: .5rem;
   padding-bottom: .3rem;
-  background-color: #dfdfdfbb;
+  background-color: #dfdfdfd2;
   width: fit-content;
   border-radius: 3px;
   min-width: 32rem;
@@ -107,6 +115,16 @@ td {
 
 .ability-text {
   white-space: pre-line;
+}
+
+// Colors
+
+.blue {
+  filter: sepia(75%) saturate(252%) brightness(67%) hue-rotate(500deg);
+}
+
+.blue-light {
+  filter: sepia(10%) saturate(150%) brightness(100%) hue-rotate(0deg);
 }
 
 @media only screen and (max-width: 600px) {

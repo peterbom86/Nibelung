@@ -12,6 +12,7 @@ export class DeathMage implements Unit {
     this.id = "SC8";
     this.name = "Death Mage";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.color = "black";
 
     this.baseStats = {
       movement: '4" / 7"',
@@ -150,4 +151,5 @@ export class DeathMage implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

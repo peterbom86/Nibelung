@@ -4,7 +4,8 @@ export class GiantEagle implements Unit {
   constructor() {
     this.id = "3";
     this.name = "Noble Elf Giant Eagle";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/high_elves/eagles.jpg";
+    this.color = "blue";
 
     this.baseStats = {
       movement: '7" / 10"',
@@ -88,4 +89,5 @@ export class GiantEagle implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

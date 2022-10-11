@@ -4,7 +4,8 @@ export class SilverHelms implements Unit {
   constructor() {
     this.id = "11";
     this.name = "Silver Helms";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/high_elves/heavycav.jpg";
+    this.color = "blue";
 
     this.baseStats = {
       movement: '6" / 10"',
@@ -110,4 +111,5 @@ export class SilverHelms implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

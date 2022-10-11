@@ -8,6 +8,7 @@ export class NighthauntVampire implements Unit {
     this.id = "SC6";
     this.name = "Nighthaunt Vampire";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.color = "black";
 
     this.baseStats = {
       movement: '7" / 10"',
@@ -106,4 +107,5 @@ export class NighthauntVampire implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

@@ -4,7 +4,8 @@ export class FireBornMage implements Unit {
   constructor() {
     this.id = "4";
     this.name = "Noble Elf Fireborn Mage";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/high_elves/heroes.jpg";
+    this.color = "blue";
 
     this.baseStats = {
       movement: '4" / 7"',
@@ -112,4 +113,5 @@ export class FireBornMage implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

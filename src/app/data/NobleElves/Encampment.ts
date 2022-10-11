@@ -8,6 +8,7 @@ export class Encampment implements Unit {
     this.id = "7";
     this.name = "Encampment";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.color = "blue";
 
     this.baseStats = {
       movement: '0" / 0"',
@@ -59,4 +60,5 @@ export class Encampment implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }

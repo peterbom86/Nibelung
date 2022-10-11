@@ -9,6 +9,7 @@ export class BloodKnights implements Unit {
     this.id = "SC5";
     this.name = "Blood Knights";
     this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.color = "black";
 
     this.baseStats = {
       movement: '7" / 10"',
@@ -83,4 +84,5 @@ export class BloodKnights implements Unit {
   objectives: BattlefieldObjective[];
   spells: Spell[];
   fieldAllowance: number;
+  color: string;
 }
