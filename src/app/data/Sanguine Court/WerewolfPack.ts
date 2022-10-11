@@ -9,7 +9,7 @@ export class WerewolfPack implements Unit {
   constructor() {
     this.id = "SC4";
     this.name = "Werewolf Pack";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/sanguine_court/werewolves.jpg";
     this.color = "black";
 
     this.baseStats = {

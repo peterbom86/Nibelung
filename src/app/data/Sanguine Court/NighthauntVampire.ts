@@ -7,7 +7,7 @@ export class NighthauntVampire implements Unit {
   constructor() {
     this.id = "SC6";
     this.name = "Nighthaunt Vampire";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/sanguine_court/characters.jpg";
     this.color = "black";
 
     this.baseStats = {

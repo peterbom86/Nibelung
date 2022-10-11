@@ -9,7 +9,7 @@ export class WailingGhouls implements Unit {
   constructor() {
     this.id = "SC3";
     this.name = "Wailing Ghouls";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/sanguine_court/ghouls.jpg";
     this.color = "black";
 
     this.baseStats = {

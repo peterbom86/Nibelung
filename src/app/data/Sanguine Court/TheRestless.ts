@@ -4,7 +4,7 @@ export class TheRestless implements Unit {
   constructor() {
     this.id = "SC1";
     this.name = "Restless";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/sanguine_court/lightinf.jpg";
     this.color = "black";
 
     this.baseStats = {

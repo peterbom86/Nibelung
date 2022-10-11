@@ -15,7 +15,7 @@ export class LordOfTheDead implements Unit {
   constructor() {
     this.id = "SC9";
     this.name = "Lord of The Dead";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/sanguine_court/characters.jpg";
     this.color = "black";
 
     this.baseStats = {

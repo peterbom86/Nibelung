@@ -8,7 +8,7 @@ export class BloodKnights implements Unit {
   constructor() {
     this.id = "SC5";
     this.name = "Blood Knights";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/sanguine_court/bloodknights.jpg";
     this.color = "black";
 
     this.baseStats = {

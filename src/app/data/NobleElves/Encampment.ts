@@ -7,7 +7,7 @@ export class Encampment implements Unit {
   constructor() {
     this.id = "7";
     this.name = "Encampment";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/high_elves/characters.jpg";
     this.color = "blue";
 
     this.baseStats = {

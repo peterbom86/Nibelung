@@ -11,7 +11,7 @@ export class DeathMage implements Unit {
   constructor() {
     this.id = "SC8";
     this.name = "Death Mage";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/sanguine_court/characters.jpg";
     this.color = "black";
 
     this.baseStats = {

@@ -4,7 +4,7 @@ export class Necromancer implements Unit {
   constructor() {
     this.id = "SC2";
     this.name = "Necromancer";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/sanguine_court/characters.jpg";
     this.color = "black";
 
     this.baseStats = {

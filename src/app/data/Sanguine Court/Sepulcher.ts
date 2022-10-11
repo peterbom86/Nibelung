@@ -8,7 +8,7 @@ export class Sepulcher implements Unit {
   constructor() {
     this.id = "SC7";
     this.name = "Sepulcher";
-    this.imageUrl = "../../../assets/high_elves/spears4.jpg";
+    this.imageUrl = "../../../assets/sanguine_court/characters.jpg";
     this.color = "black";
 
     this.baseStats = {
