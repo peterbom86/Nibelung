@@ -17,7 +17,6 @@
 .stat-block {
   margin-top: 1rem;
   margin-left: 1rem;
-  margin-right: 1rem;
   padding-left: .5rem;
   padding-right: .5rem;
   padding-top: .5rem;
@@ -25,8 +24,8 @@
   background-color: #dfdfdfbb;
   width: fit-content;
   border-radius: 3px;
-  min-width: 36rem;
-  max-width: 36rem;
+  min-width: 25rem;
+  max-width: 25rem;
   height: fit-content;
 }
 
@@ -53,7 +52,8 @@ table {
 }
 
 th {
-  min-width: 5rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
   border-bottom: 1px solid;
 }
 
@@ -147,7 +147,6 @@ td {
 
   table>tr>th {
     font-size: .8rem;
-    min-width: 0rem;
     padding-left: .2rem;
     padding-right: .2rem;
   }

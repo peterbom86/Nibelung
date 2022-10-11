@@ -5,9 +5,9 @@
     <img src="{{unit.imageUrl}}" fxFlex.gt-xs="100">
   </div>
 
-  <div fxLayout="row wrap">
+  <div fxLayout="row wrap" fxLayout.xs="column">
 
-    <div fxFlex="50" fxFlex.xs="100">
+    <div>
       <!-- Unit Name -->
       <div class="stat-block">
         <div class="unit-name">
@@ -127,7 +127,7 @@
 
     </div>
 
-    <div fxFlex="50" fxFlex.xs="100" class="last-block">
+    <div class="last-block">
       <!-- Unit Abilities -->
       <div class="stat-block" *ngIf="unit.activeAbilities.length > 0">
         <div class="unit-abilities">
