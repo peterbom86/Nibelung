@@ -5,7 +5,6 @@ export class SanguineCourtSubfaction implements Subfaction {
     public id: string,
     public name: string,
     public imageUrl: string,
-    public startingUnits: String,
     public startingReqPoints: number,
     public unitLimitationRules: string[],
     public specialRules: SubfactionSpecialRule[],
@@ -17,7 +16,6 @@ export const BLOODBORN = new SanguineCourtSubfaction(
   "SC1", // Id
   "Bloodborn", // Name
   "", // Image URL
-  "", // Starting Units
   3,
   // Unit Limitation Rules
   [
@@ -51,7 +49,6 @@ export const LIVING_DEAD = new SanguineCourtSubfaction(
   "SC2", // Id
   "The Living Dead", // Name
   "", // Image URL
-  "3x Restless Dead, 2x Necromancer", // Starting Units
   3,
   [ // Unit Limitation Rules
     "This army can only field one of each unit with the 'Vampire' keyword.",
@@ -80,7 +77,6 @@ export const Nightstalkers = new SanguineCourtSubfaction(
   "SC3", // Id
   "Nightstalkers", // Name
   "", // Image URL
-  "3x Wailing Ghouls", // Starting Units
   3,
   [ // Unit Limitation Rules
     "This army can only field one of each unit with the 'Raised' keyword.",

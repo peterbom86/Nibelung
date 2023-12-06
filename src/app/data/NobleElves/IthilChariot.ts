@@ -8,7 +8,7 @@ export class IthilChariot implements Unit {
     this.color = "blue";
 
     this.baseStats = {
-      movement: '7" / 10"',
+      movement: 'M + 2',
       defense: '1/3/2',
       resilience: '1',
       hp: '10',

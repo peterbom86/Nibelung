@@ -8,7 +8,7 @@ export class TheRestless implements Unit {
     this.color = "black";
 
     this.baseStats = {
-      movement: '3" / 6"',
+      movement: 'Short',
       defense: '2/2/1',
       resilience: '1',
       hp: '15',

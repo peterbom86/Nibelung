@@ -13,7 +13,7 @@ export class WailingGhouls implements Unit {
     this.color = "black";
 
     this.baseStats = {
-      movement: '4" / 7"',
+      movement: 'Medium',
       defense: '2/3/1',
       resilience: '0',
       hp: '10',

@@ -8,7 +8,7 @@ export class CelethirReavers implements Unit {
     this.color = "blue";
 
     this.baseStats = {
-      movement: '8" / 11"',
+      movement: 'Long',
       defense: '3/4/3',
       resilience: '0',
       hp: '8',

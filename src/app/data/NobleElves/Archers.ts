@@ -8,7 +8,7 @@ export class Archers implements Unit {
     this.color = "blue";
 
     this.baseStats = {
-      movement: '4" / 7"',
+      movement: 'Medium',
       defense: '1/2/3',
       resilience: '0',
       hp: '10',
@@ -57,7 +57,7 @@ export class Archers implements Unit {
     this.attacks = [
       {
         name: 'Elven Bow',
-        range: '12"',
+        range: '6',
         dice: '4/2',
         attacks: '2',
         rend: '0',
@@ -72,7 +72,7 @@ export class Archers implements Unit {
             hits6: '6 dmg'
           },
           {
-            hits2: '2" Slow'
+            hits2: 'Slow'
           }]
       },
       {

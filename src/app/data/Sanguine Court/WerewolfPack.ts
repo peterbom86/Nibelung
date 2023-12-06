@@ -13,7 +13,7 @@ export class WerewolfPack implements Unit {
     this.color = "black";
 
     this.baseStats = {
-      movement: '6" / 9"',
+      movement: 'Long',
       defense: '2/2/2',
       resilience: '1',
       hp: '15',

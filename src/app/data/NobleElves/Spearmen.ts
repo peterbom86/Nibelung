@@ -8,7 +8,7 @@ export class Spearmen implements Unit {
     this.color = "blue";
 
     this.baseStats = {
-      movement: '4" / 7"',
+      movement: 'Medium',
       defense: '3/3/3',
       resilience: '1',
       hp: '12',

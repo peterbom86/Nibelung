@@ -8,7 +8,7 @@ export class FireBornMage implements Unit {
     this.color = "blue";
 
     this.baseStats = {
-      movement: '4" / 7"',
+      movement: 'M',
       defense: '2/3/4',
       resilience: '0',
       hp: '5',

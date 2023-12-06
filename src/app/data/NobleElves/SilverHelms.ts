@@ -8,7 +8,7 @@ export class SilverHelms implements Unit {
     this.color = "blue";
 
     this.baseStats = {
-      movement: '6" / 10"',
+      movement: 'Long',
       defense: '2/2/3',
       resilience: '3',
       hp: '12',

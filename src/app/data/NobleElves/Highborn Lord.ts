@@ -8,7 +8,7 @@ export class HighBornLord implements Unit {
     this.color = "blue";
 
     this.baseStats = {
-      movement: '6" / 9"',
+      movement: 'M + 2',
       defense: '3/2/3',
       resilience: '2',
       hp: '5',

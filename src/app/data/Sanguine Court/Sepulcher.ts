@@ -30,7 +30,7 @@ export class Sepulcher implements Unit {
         range: 'Self',
         oncePerTurn: true,
         description: `
-           Target friendly unit within 12" may reroll one attack roll.`
+           Target friendly unit within range 6 may reroll one attack roll.`
       }
     ];
 

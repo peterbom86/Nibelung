@@ -15,7 +15,7 @@ export class DeathMage implements Unit {
     this.color = "black";
 
     this.baseStats = {
-      movement: '4" / 7"',
+      movement: 'Medium',
       defense: '1/1/3',
       resilience: '0',
       hp: '5',

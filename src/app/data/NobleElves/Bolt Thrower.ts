@@ -7,12 +7,12 @@ import { ActiveAbility, ActiveLevelingAbility, Attack, BaseStats, BattlefieldObj
 export class BoltThrower implements Unit {
   constructor() {
     this.id = "5";
-    this.name = "Noble Elf House Guard Archers";
+    this.name = "Noble Elf Bolt Thrower";
     this.imageUrl = "../../../assets/high_elves/boltthrower.jpg";
     this.color = "blue";
 
     this.baseStats = {
-      movement: '2"',
+      movement: 'Short',
       defense: '0/1/1',
       resilience: '1',
       hp: '5',
@@ -52,7 +52,7 @@ export class BoltThrower implements Unit {
     this.attacks = [
       {
         name: 'Heavy Bolt',
-        range: '18"',
+        range: '9',
         dice: '3/3',
         attacks: '2',
         rend: '2',

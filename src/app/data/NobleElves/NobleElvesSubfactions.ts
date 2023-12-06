@@ -5,7 +5,6 @@ export class NobleElvesSubfactions implements Subfaction {
     public id: string,
     public name: string,
     public imageUrl: string,
-    public startingUnits: String,
     public startingReqPoints: number,
     public unitLimitationRules: string[],
     public specialRules: SubfactionSpecialRule[],
@@ -17,7 +16,6 @@ export const HORSELORDS = new NobleElvesSubfactions(
   "1",
   "The Horse Lords of Riverdale",
   "",
-  "1x Silver Helms, 2x Ellyrian Reavers, 1x Tiranoc Chariot",
   3,
   ["Can field 4 of each mounted unit.", "Can field only 1 of each infantry unit"],
   [
@@ -43,7 +41,6 @@ export const SHINING_COMPANY = new NobleElvesSubfactions(
   "2", // Id
   "The Shining Company", // Name
   "", // Image URL
-  "3x Spearmen, 1x Fireborn Mage", // Starting Units
   3,
   [ // Unit Limitation Rules
     "Cannot recruit any Swordmaster, White Lion, Ellyrian Reaver or Dragonlord units.",

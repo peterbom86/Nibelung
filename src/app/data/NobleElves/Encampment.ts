@@ -11,7 +11,7 @@ export class Encampment implements Unit {
     this.color = "blue";
 
     this.baseStats = {
-      movement: '0" / 0"',
+      movement: '-',
       defense: '0/0/4',
       resilience: '3',
       hp: '20',

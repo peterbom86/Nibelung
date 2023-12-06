@@ -8,7 +8,7 @@ export class HalthirTheDragonLord implements Unit {
     this.color = "blue";
 
     this.baseStats = {
-      movement: '6" / 10"',
+      movement: 'Long',
       defense: '3/1/4',
       resilience: '3',
       hp: '30',

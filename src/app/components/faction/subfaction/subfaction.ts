@@ -2,7 +2,6 @@ export interface Subfaction {
   id: string;
   name: string;
   imageUrl: string;
-  startingUnits: String;
   startingReqPoints: number,
   unitLimitationRules: string[];
   specialRules: SubfactionSpecialRule[];

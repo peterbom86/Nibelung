@@ -12,7 +12,7 @@ export class BloodKnights implements Unit {
     this.color = "black";
 
     this.baseStats = {
-      movement: '7" / 10"',
+      movement: 'Long',
       defense: '3/3/4',
       resilience: '2',
       hp: '15',

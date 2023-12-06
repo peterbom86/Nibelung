@@ -19,7 +19,7 @@ export class LordOfTheDead implements Unit {
     this.color = "black";
 
     this.baseStats = {
-      movement: '7" / 10"',
+      movement: 'Long',
       defense: '4/3/3',
       resilience: '1',
       hp: '10',
