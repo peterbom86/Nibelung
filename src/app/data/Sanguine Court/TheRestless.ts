@@ -24,7 +24,7 @@ export class TheRestless implements Unit {
     this.passiveAbilities = [
       {
         name: 'Restless Bones',
-        description: `At the end of every turn, if this unit is within 6" of a friendly Necromancer, this unit heals 3 HP.
+        description: `At the end of every turn, if this unit is within range 3 of a friendly Necromancer, this unit heals 3 HP.
          If not, this unit suffers 3 damage.`
       },
       {

@@ -43,7 +43,7 @@ export class WailingGhouls implements Unit {
       },
       {
         name: 'Horrible Wailing',
-        description: `Enemy units receiving orders while within 4" of this unit must pay an additional CP for the order to take effect.`
+        description: `Enemy units receiving orders while within range 3 of this unit must pay an additional CP for the order to take effect.`
       }
     ];
 
@@ -54,7 +54,7 @@ export class WailingGhouls implements Unit {
       {
         name: 'Pestilence',
         experienceCost: '3 xp',
-        description: `When this unit is destroyed, all enemy units within 2" suffer 4 dmg.
+        description: `When this unit is destroyed, all enemy units within range 2 suffer 4 dmg.
         \n If this unit end a turn engaging the enemy encampment, the encampment gains a pestilence token. At the start of every turn,
          an encampment takes 3 dmg per pestilence token currently on it.`
       }];

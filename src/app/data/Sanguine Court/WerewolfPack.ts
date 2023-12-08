@@ -30,14 +30,14 @@ export class WerewolfPack implements Unit {
         costCanBePaidWithSymbol: true,
         range: '4"',
         oncePerTurn: true,
-        description: `Every enemy model within 4" of this unit suffers -1/-1 to their attack rolls`
+        description: `Every enemy model within range 3 of this unit suffers -1/-1 to their attack rolls`
       }
     ];
 
     this.passiveAbilities = [
       {
         name: 'Stalks in the Shadows',
-        description: `The unit cannot be targeted by ranged attacks from more than 5" away.`
+        description: `The unit cannot be targeted by ranged attacks from more than range 3 away.`
       }
     ];
 
