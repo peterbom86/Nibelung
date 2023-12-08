@@ -69,7 +69,7 @@ export class Spearmen implements Unit {
             hits5: '6 dmg'
           },
           {
-            hits2: '2" Push',
+            hits2: 'Short Push',
             hits3: 'Symbol',
           }]
       }];
