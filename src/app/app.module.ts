@@ -14,7 +14,6 @@ import { FactionRulesComponent } from './components/faction/faction-rules/factio
 import { SubfactionComponent } from './components/faction/subfaction/subfaction.component';
 import { RulesComponent } from './components/rules/rules.component';
 import { RoundDescriptionComponent } from './components/rules/round-description/round-description.component';
-import { TurnDescriptionComponent } from './components/rules/turn-description/turn-description.component';
 import { DiceProfileComponent } from './components/rules/dice-profile/dice-profile.component';
 import { UnitProfileComponent } from './components/rules/unit-profile/unit-profile.component';
 import { OrdersComponent } from './components/rules/orders/orders.component';
@@ -54,7 +53,6 @@ import { KeyConceptsComponent } from './components/rules/key-concepts/key-concep
     SubfactionComponent,
     RulesComponent,
     RoundDescriptionComponent,
-    TurnDescriptionComponent,
     DiceProfileComponent,
     UnitProfileComponent,
     OrdersComponent,

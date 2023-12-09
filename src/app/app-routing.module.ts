@@ -32,7 +32,6 @@ import { ScenarioStructureComponent } from './components/rules/scenarios/scenari
 import { ScenarioVictoryConditionsComponent } from './components/rules/scenarios/scenario-victory-conditions/scenario-victory-conditions.component';
 import { ScenariosComponent } from './components/rules/scenarios/scenarios.component';
 import { TerrainComponent } from './components/rules/terrain/terrain.component';
-import { TurnDescriptionComponent } from './components/rules/turn-description/turn-description.component';
 import { UnitProfileComponent } from './components/rules/unit-profile/unit-profile.component';
 import { UnitComponent } from './components/unit/unit.component';
 
@@ -60,7 +59,6 @@ const routes: Routes = [
   { path: 'rules/legends', component: LegendaryHeroesComponent },
   { path: 'rules/pushes', component: PushesComponent },
   { path: 'rules/roundDesc', component: RoundDescriptionComponent },
-  { path: 'rules/turnDesc', component: TurnDescriptionComponent },
   { path: 'rules/scenarios', component: ScenariosComponent },
   { path: 'rules/exampleScenario', component: ExampleScenarioComponent },
   { path: 'rules/scenarioElements', component: ScenarioElementsComponent },
